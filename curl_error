@@ -1,0 +1,61 @@
+
+  curl version:     7.62.0-DEV
+  Host setup:       x86_64-pc-linux-gnu
+  Install prefix:   /usr/local
+  Compiler:         gcc
+  SSL support:      no      (--with-{ssl,gnutls,nss,polarssl,mbedtls,cyassl,axtls,winssl,darwinssl,mesalink} )
+  SSH support:      no      (--with-libssh2)
+  zlib support:     no      (--with-zlib)
+  brotli support:   no      (--with-brotli)
+  GSS-API support:  no      (--with-gssapi)
+  TLS-SRP support:  no      (--enable-tls-srp)
+  resolver:         POSIX threaded
+  IPv6 support:     enabled
+  Unix sockets support: enabled
+  IDN support:      no      (--with-{libidn2,winidn})
+  Build libcurl:    Shared=yes, Static=yes
+  Built-in manual:  enabled
+  --libcurl option: enabled (--disable-libcurl-option)
+  Verbose errors:   enabled (--disable-verbose)
+  SSPI support:     no      (--enable-sspi)
+  ca cert bundle:   no
+  ca cert path:     
+  ca fallback:      
+  LDAP support:     no      (--enable-ldap / --with-ldap-lib / --with-lber-lib)
+  LDAPS support:    no      (--enable-ldaps)
+  RTSP support:     enabled
+  RTMP support:     no      (--with-librtmp)
+  metalink support: no      (--with-libmetalink)
+  PSL support:      no      (libpsl not found)
+  HTTP2 support:    disabled (--with-nghttp2)
+  Protocols:        DICT FILE FTP GOPHER HTTP IMAP POP3 RTSP SMTP TELNET TFTP
+
+Making all in lib
+make[1]: Entering directory '/home/andy/Desktop/hello/curl/lib'
+make  all-am
+make[2]: Entering directory '/home/andy/Desktop/hello/curl/lib'
+  CC       libcurl_la-file.lo
+Unsupported option: -fvisibility=hidden
+In file included from hostip.h:27:0,
+                 from urldata.h:98,
+                 from file.c:52:
+curl_addrinfo.h:71:21: warning: ‘struct addrinfo’ declared inside parameter list
+                     Curl_addrinfo **result);
+                     ^
+curl_addrinfo.h:71:21: warning: its scope is only this definition or declaration, which is probably not what you want
+In file included from urldata.h:98:0,
+                 from file.c:52:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -fvisibility=hidden -Werror-implicit-function-declaration -O2 -Wno-system-headers -pthread -MT libcurl_la-file.lo -MD -MP -MF .deps/libcurl_la-file.Tpo -c file.c -fPIC -DPIC -o .libs/libcurl_la-file.o
+Makefile:1284: recipe for target 'libcurl_la-file.lo' failed
+make[2]: *** [libcurl_la-file.lo] Error 1
+make[2]: Leaving directory '/home/andy/Desktop/hello/curl/lib'
+Makefile:754: recipe for target 'all' failed
+make[1]: *** [all] Error 2
+make[1]: Leaving directory '/home/andy/Desktop/hello/curl/lib'
+Makefile:929: recipe for target 'all-recursive' failed
+make: *** [all-recursive] Error 1
+
