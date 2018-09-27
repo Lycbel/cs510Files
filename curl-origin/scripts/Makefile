@@ -150,8 +150,8 @@ AWK = mawk
 BLANK_AT_MAKETIME = 
 CC = gcc
 CCDEPMODE = depmode=kcc3
-CFLAGS = -Werror-implicit-function-declaration -O2 -Wno-system-headers -pthread
-CFLAG_CURL_SYMBOL_HIDING = -fvisibility=hidden
+CFLAGS = -O2 -Wno-system-headers -w -pthread
+CFLAG_CURL_SYMBOL_HIDING =
 CODE_COVERAGE_CFLAGS = 
 CODE_COVERAGE_CPPFLAGS = 
 CODE_COVERAGE_CXXFLAGS = 

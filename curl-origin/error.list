@@ -1,0 +1,1116 @@
+Making all in lib
+make[1]: Entering directory '/home/andy/Desktop/test598/curlMini/cs510Files/curl-origin/lib'
+make  all-am
+make[2]: Entering directory '/home/andy/Desktop/test598/curlMini/cs510Files/curl-origin/lib'
+  CC       libcurl_la-file.lo
+In file included from urldata.h:98:0,
+                 from file.c:52:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-file.lo -MD -MP -MF .deps/libcurl_la-file.TPlo -c file.c -fPIC -DPIC -o .libs/libcurl_la-file.o
+Makefile:1286: recipe for target 'libcurl_la-file.lo' failed
+make[2]: *** [libcurl_la-file.lo] Error 1
+  CC       libcurl_la-timeval.lo
+timeval.c: In function ‘Curl_now’:
+timeval.c:63:25: error: ‘CLOCK_MONOTONIC’ undeclared (first use in this function)
+   if(0 == clock_gettime(CLOCK_MONOTONIC, &tsnow)) {
+                         ^
+timeval.c:63:25: note: each undeclared identifier is reported only once for each function it appears in
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-timeval.lo -MD -MP -MF .deps/libcurl_la-timeval.TPlo -c timeval.c -fPIC -DPIC -o .libs/libcurl_la-timeval.o
+Makefile:1293: recipe for target 'libcurl_la-timeval.lo' failed
+make[2]: *** [libcurl_la-timeval.lo] Error 1
+  CC       libcurl_la-base64.lo
+In file included from urldata.h:98:0,
+                 from base64.c:26:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-base64.lo -MD -MP -MF .deps/libcurl_la-base64.TPlo -c base64.c -fPIC -DPIC -o .libs/libcurl_la-base64.o
+Makefile:1300: recipe for target 'libcurl_la-base64.lo' failed
+make[2]: *** [libcurl_la-base64.lo] Error 1
+  CC       libcurl_la-hostip.lo
+In file included from urldata.h:98:0,
+                 from hostip.c:53:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+hostip.c:290:1: error: unknown type name ‘sigjmp_buf’
+ sigjmp_buf curl_jmpenv;
+ ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-hostip.lo -MD -MP -MF .deps/libcurl_la-hostip.TPlo -c hostip.c -fPIC -DPIC -o .libs/libcurl_la-hostip.o
+Makefile:1307: recipe for target 'libcurl_la-hostip.lo' failed
+make[2]: *** [libcurl_la-hostip.lo] Error 1
+  CC       libcurl_la-progress.lo
+In file included from urldata.h:98:0,
+                 from progress.c:25:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-progress.lo -MD -MP -MF .deps/libcurl_la-progress.TPlo -c progress.c -fPIC -DPIC -o .libs/libcurl_la-progress.o
+Makefile:1314: recipe for target 'libcurl_la-progress.lo' failed
+make[2]: *** [libcurl_la-progress.lo] Error 1
+  CC       libcurl_la-formdata.lo
+In file included from urldata.h:98:0,
+                 from formdata.c:33:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-formdata.lo -MD -MP -MF .deps/libcurl_la-formdata.TPlo -c formdata.c -fPIC -DPIC -o .libs/libcurl_la-formdata.o
+Makefile:1321: recipe for target 'libcurl_la-formdata.lo' failed
+make[2]: *** [libcurl_la-formdata.lo] Error 1
+  CC       libcurl_la-cookie.lo
+In file included from urldata.h:98:0,
+                 from cookie.c:87:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-cookie.lo -MD -MP -MF .deps/libcurl_la-cookie.TPlo -c cookie.c -fPIC -DPIC -o .libs/libcurl_la-cookie.o
+Makefile:1328: recipe for target 'libcurl_la-cookie.lo' failed
+make[2]: *** [libcurl_la-cookie.lo] Error 1
+  CC       libcurl_la-http.lo
+In file included from urldata.h:98:0,
+                 from http.c:48:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-http.lo -MD -MP -MF .deps/libcurl_la-http.TPlo -c http.c -fPIC -DPIC -o .libs/libcurl_la-http.o
+Makefile:1335: recipe for target 'libcurl_la-http.lo' failed
+make[2]: *** [libcurl_la-http.lo] Error 1
+  CC       libcurl_la-sendf.lo
+In file included from urldata.h:98:0,
+                 from sendf.c:35:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-sendf.lo -MD -MP -MF .deps/libcurl_la-sendf.TPlo -c sendf.c -fPIC -DPIC -o .libs/libcurl_la-sendf.o
+Makefile:1342: recipe for target 'libcurl_la-sendf.lo' failed
+make[2]: *** [libcurl_la-sendf.lo] Error 1
+  CC       libcurl_la-ftp.lo
+ftp.c:290:3: error: Incompatible pointer types in initializer or function call arguments.
+
+    Constraint violation (CV-TSE2):
+        see C11 section 6.7.9:11 http://rvdoc.org/C11/6.7.9
+        see C11 section 6.5.16.1:1 http://rvdoc.org/C11/6.5.16.1
+        see CERT-C section MSC40-C http://rvdoc.org/CERT-C/MSC40-C
+        see MISRA-C section 8.1:1 http://rvdoc.org/MISRA-C/8.1
+
+ftp.c:293:5: error: Incompatible pointer types in initializer or function call arguments.
+
+    Constraint violation (CV-TSE2):
+        see C11 section 6.7.9:11 http://rvdoc.org/C11/6.7.9
+        see C11 section 6.5.16.1:1 http://rvdoc.org/C11/6.5.16.1
+        see CERT-C section MSC40-C http://rvdoc.org/CERT-C/MSC40-C
+        see MISRA-C section 8.1:1 http://rvdoc.org/MISRA-C/8.1
+
+ftp.c:1069:5: error: Incompatible pointer types in initializer or function call arguments.
+
+    Constraint violation (CV-TSE2):
+        see C11 section 6.7.9:11 http://rvdoc.org/C11/6.7.9
+        see C11 section 6.5.16.1:1 http://rvdoc.org/C11/6.5.16.1
+        see CERT-C section MSC40-C http://rvdoc.org/CERT-C/MSC40-C
+        see MISRA-C section 8.1:1 http://rvdoc.org/MISRA-C/8.1
+
+ftp.c:1153:9: error: Incompatible pointer types in initializer or function call arguments.
+
+    Constraint violation (CV-TSE2):
+        see C11 section 6.7.9:11 http://rvdoc.org/C11/6.7.9
+        see C11 section 6.5.16.1:1 http://rvdoc.org/C11/6.5.16.1
+        see CERT-C section MSC40-C http://rvdoc.org/CERT-C/MSC40-C
+        see MISRA-C section 8.1:1 http://rvdoc.org/MISRA-C/8.1
+
+ftp.c:1186:3: error: Incompatible pointer types in initializer or function call arguments.
+
+    Constraint violation (CV-TSE2):
+        see C11 section 6.7.9:11 http://rvdoc.org/C11/6.7.9
+        see C11 section 6.5.16.1:1 http://rvdoc.org/C11/6.5.16.1
+        see CERT-C section MSC40-C http://rvdoc.org/CERT-C/MSC40-C
+        see MISRA-C section 8.1:1 http://rvdoc.org/MISRA-C/8.1
+
+In file included from urldata.h:98:0,
+                 from ftp.c:50:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-ftp.lo -MD -MP -MF .deps/libcurl_la-ftp.TPlo -c ftp.c -fPIC -DPIC -o .libs/libcurl_la-ftp.o
+Makefile:1349: recipe for target 'libcurl_la-ftp.lo' failed
+make[2]: *** [libcurl_la-ftp.lo] Error 1
+  CC       libcurl_la-url.lo
+url.c:463:3: error: Potential negative zero produced via bitwise operations, undefined under sign and magnitude or one's complement arithmetic, implementation-defined otherwise.
+
+    Implementation-dependent undefined behavior (IMPLUB-CEB12):
+        see C11 section 6.2.6.2:4 http://rvdoc.org/C11/6.2.6.2
+        see C11 section J.2:1 item 14 http://rvdoc.org/C11/J.2
+        see CERT-C section INT13-C http://rvdoc.org/CERT-C/INT13-C
+        see CERT-C section MSC15-C http://rvdoc.org/CERT-C/MSC15-C
+        see MISRA-C section 8.1:3 http://rvdoc.org/MISRA-C/8.1
+
+url.c:475:3: error: Potential negative zero produced via bitwise operations, undefined under sign and magnitude or one's complement arithmetic, implementation-defined otherwise.
+
+    Implementation-dependent undefined behavior (IMPLUB-CEB12):
+        see C11 section 6.2.6.2:4 http://rvdoc.org/C11/6.2.6.2
+        see C11 section J.2:1 item 14 http://rvdoc.org/C11/J.2
+        see CERT-C section INT13-C http://rvdoc.org/CERT-C/INT13-C
+        see CERT-C section MSC15-C http://rvdoc.org/CERT-C/MSC15-C
+        see MISRA-C section 8.1:3 http://rvdoc.org/MISRA-C/8.1
+
+url.c:476:3: error: Potential negative zero produced via bitwise operations, undefined under sign and magnitude or one's complement arithmetic, implementation-defined otherwise.
+
+    Implementation-dependent undefined behavior (IMPLUB-CEB12):
+        see C11 section 6.2.6.2:4 http://rvdoc.org/C11/6.2.6.2
+        see C11 section J.2:1 item 14 http://rvdoc.org/C11/J.2
+        see CERT-C section INT13-C http://rvdoc.org/CERT-C/INT13-C
+        see CERT-C section MSC15-C http://rvdoc.org/CERT-C/MSC15-C
+        see MISRA-C section 8.1:3 http://rvdoc.org/MISRA-C/8.1
+
+In file included from urldata.h:98:0,
+                 from url.c:68:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-url.lo -MD -MP -MF .deps/libcurl_la-url.TPlo -c url.c -fPIC -DPIC -o .libs/libcurl_la-url.o
+Makefile:1356: recipe for target 'libcurl_la-url.lo' failed
+make[2]: *** [libcurl_la-url.lo] Error 1
+  CC       libcurl_la-dict.lo
+In file included from urldata.h:98:0,
+                 from dict.c:51:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-dict.lo -MD -MP -MF .deps/libcurl_la-dict.TPlo -c dict.c -fPIC -DPIC -o .libs/libcurl_la-dict.o
+Makefile:1363: recipe for target 'libcurl_la-dict.lo' failed
+make[2]: *** [libcurl_la-dict.lo] Error 1
+  CC       libcurl_la-if2ip.lo
+  CC       libcurl_la-speedcheck.lo
+In file included from urldata.h:98:0,
+                 from speedcheck.c:26:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-speedcheck.lo -MD -MP -MF .deps/libcurl_la-speedcheck.TPlo -c speedcheck.c -fPIC -DPIC -o .libs/libcurl_la-speedcheck.o
+Makefile:1377: recipe for target 'libcurl_la-speedcheck.lo' failed
+make[2]: *** [libcurl_la-speedcheck.lo] Error 1
+  CC       libcurl_la-ldap.lo
+  CC       libcurl_la-version.lo
+In file included from urldata.h:98:0,
+                 from version.c:26:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-version.lo -MD -MP -MF .deps/libcurl_la-version.TPlo -c version.c -fPIC -DPIC -o .libs/libcurl_la-version.o
+Makefile:1391: recipe for target 'libcurl_la-version.lo' failed
+make[2]: *** [libcurl_la-version.lo] Error 1
+  CC       libcurl_la-getenv.lo
+  CC       libcurl_la-escape.lo
+In file included from urldata.h:98:0,
+                 from escape.c:30:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-escape.lo -MD -MP -MF .deps/libcurl_la-escape.TPlo -c escape.c -fPIC -DPIC -o .libs/libcurl_la-escape.o
+Makefile:1405: recipe for target 'libcurl_la-escape.lo' failed
+make[2]: *** [libcurl_la-escape.lo] Error 1
+  CC       libcurl_la-mprintf.lo
+  CC       libcurl_la-telnet.lo
+In file included from urldata.h:98:0,
+                 from telnet.c:47:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-telnet.lo -MD -MP -MF .deps/libcurl_la-telnet.TPlo -c telnet.c -fPIC -DPIC -o .libs/libcurl_la-telnet.o
+Makefile:1419: recipe for target 'libcurl_la-telnet.lo' failed
+make[2]: *** [libcurl_la-telnet.lo] Error 1
+  CC       libcurl_la-netrc.lo
+  CC       libcurl_la-getinfo.lo
+In file included from urldata.h:98:0,
+                 from getinfo.c:27:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-getinfo.lo -MD -MP -MF .deps/libcurl_la-getinfo.TPlo -c getinfo.c -fPIC -DPIC -o .libs/libcurl_la-getinfo.o
+Makefile:1433: recipe for target 'libcurl_la-getinfo.lo' failed
+make[2]: *** [libcurl_la-getinfo.lo] Error 1
+  CC       libcurl_la-transfer.lo
+In file included from urldata.h:98:0,
+                 from transfer.c:57:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-transfer.lo -MD -MP -MF .deps/libcurl_la-transfer.TPlo -c transfer.c -fPIC -DPIC -o .libs/libcurl_la-transfer.o
+Makefile:1440: recipe for target 'libcurl_la-transfer.lo' failed
+make[2]: *** [libcurl_la-transfer.lo] Error 1
+  CC       libcurl_la-strcase.lo
+  CC       libcurl_la-easy.lo
+sigpipe.h:54:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+In file included from urldata.h:98:0,
+                 from easy.c:53:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+In file included from easy.c:74:0:
+sigpipe.h:30:20: error: field ‘old_pipe_act’ has incomplete type
+   struct sigaction old_pipe_act;
+                    ^
+sigpipe.h: In function ‘sigpipe_ignore’:
+sigpipe.h:48:22: error: storage size of ‘action’ isn’t known
+     struct sigaction action;
+                      ^
+sigpipe.h:50:41: error: invalid application of ‘sizeof’ to incomplete type ‘struct sigaction’
+     memset(&ig->old_pipe_act, 0, sizeof(struct sigaction));
+                                         ^
+easy.c: At top level:
+easy.c:164:23: error: ‘strdup’ undeclared here (not in a function)
+ #define system_strdup strdup
+                       ^
+easy.c:179:59: note: in expansion of macro ‘system_strdup’
+ curl_strdup_callback Curl_cstrdup = (curl_strdup_callback)system_strdup;
+                                                           ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-easy.lo -MD -MP -MF .deps/libcurl_la-easy.TPlo -c easy.c -fPIC -DPIC -o .libs/libcurl_la-easy.o
+Makefile:1454: recipe for target 'libcurl_la-easy.lo' failed
+make[2]: *** [libcurl_la-easy.lo] Error 1
+  CC       libcurl_la-security.lo
+  CC       libcurl_la-curl_fnmatch.lo
+  CC       libcurl_la-fileinfo.lo
+  CC       libcurl_la-ftplistparser.lo
+In file included from urldata.h:98:0,
+                 from ftplistparser.c:44:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-ftplistparser.lo -MD -MP -MF .deps/libcurl_la-ftplistparser.TPlo -c ftplistparser.c -fPIC -DPIC -o .libs/libcurl_la-ftplistparser.o
+Makefile:1482: recipe for target 'libcurl_la-ftplistparser.lo' failed
+make[2]: *** [libcurl_la-ftplistparser.lo] Error 1
+  CC       libcurl_la-wildcard.lo
+  CC       libcurl_la-krb5.lo
+  CC       libcurl_la-memdebug.lo
+  CC       libcurl_la-http_chunks.lo
+In file included from urldata.h:98:0,
+                 from http_chunks.c:27:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-http_chunks.lo -MD -MP -MF .deps/libcurl_la-http_chunks.TPlo -c http_chunks.c -fPIC -DPIC -o .libs/libcurl_la-http_chunks.o
+Makefile:1510: recipe for target 'libcurl_la-http_chunks.lo' failed
+make[2]: *** [libcurl_la-http_chunks.lo] Error 1
+  CC       libcurl_la-strtok.lo
+  CC       libcurl_la-connect.lo
+connect.c:448:7: error: Incompatible pointer types in initializer or function call arguments.
+
+    Constraint violation (CV-TSE2):
+        see C11 section 6.7.9:11 http://rvdoc.org/C11/6.7.9
+        see C11 section 6.5.16.1:1 http://rvdoc.org/C11/6.5.16.1
+        see CERT-C section MSC40-C http://rvdoc.org/CERT-C/MSC40-C
+        see MISRA-C section 8.1:1 http://rvdoc.org/MISRA-C/8.1
+
+connect.c:516:3: error: Incompatible pointer types in initializer or function call arguments.
+
+    Constraint violation (CV-TSE2):
+        see C11 section 6.7.9:11 http://rvdoc.org/C11/6.7.9
+        see C11 section 6.5.16.1:1 http://rvdoc.org/C11/6.5.16.1
+        see CERT-C section MSC40-C http://rvdoc.org/CERT-C/MSC40-C
+        see MISRA-C section 8.1:1 http://rvdoc.org/MISRA-C/8.1
+
+connect.c:687:5: error: Incompatible pointer types in initializer or function call arguments.
+
+    Constraint violation (CV-TSE2):
+        see C11 section 6.7.9:11 http://rvdoc.org/C11/6.7.9
+        see C11 section 6.5.16.1:1 http://rvdoc.org/C11/6.5.16.1
+        see CERT-C section MSC40-C http://rvdoc.org/CERT-C/MSC40-C
+        see MISRA-C section 8.1:1 http://rvdoc.org/MISRA-C/8.1
+
+connect.c:696:5: error: Incompatible pointer types in initializer or function call arguments.
+
+    Constraint violation (CV-TSE2):
+        see C11 section 6.7.9:11 http://rvdoc.org/C11/6.7.9
+        see C11 section 6.5.16.1:1 http://rvdoc.org/C11/6.5.16.1
+        see CERT-C section MSC40-C http://rvdoc.org/CERT-C/MSC40-C
+        see MISRA-C section 8.1:1 http://rvdoc.org/MISRA-C/8.1
+
+In file included from urldata.h:98:0,
+                 from connect.c:61:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-connect.lo -MD -MP -MF .deps/libcurl_la-connect.TPlo -c connect.c -fPIC -DPIC -o .libs/libcurl_la-connect.o
+Makefile:1524: recipe for target 'libcurl_la-connect.lo' failed
+make[2]: *** [libcurl_la-connect.lo] Error 1
+  CC       libcurl_la-llist.lo
+  CC       libcurl_la-hash.lo
+  CC       libcurl_la-multi.lo
+sigpipe.h:54:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+In file included from urldata.h:98:0,
+                 from multi.c:27:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+In file included from multi.c:45:0:
+sigpipe.h:30:20: error: field ‘old_pipe_act’ has incomplete type
+   struct sigaction old_pipe_act;
+                    ^
+sigpipe.h: In function ‘sigpipe_ignore’:
+sigpipe.h:48:22: error: storage size of ‘action’ isn’t known
+     struct sigaction action;
+                      ^
+sigpipe.h:50:41: error: invalid application of ‘sizeof’ to incomplete type ‘struct sigaction’
+     memset(&ig->old_pipe_act, 0, sizeof(struct sigaction));
+                                         ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-multi.lo -MD -MP -MF .deps/libcurl_la-multi.TPlo -c multi.c -fPIC -DPIC -o .libs/libcurl_la-multi.o
+Makefile:1545: recipe for target 'libcurl_la-multi.lo' failed
+make[2]: *** [libcurl_la-multi.lo] Error 1
+  CC       libcurl_la-content_encoding.lo
+In file included from urldata.h:98:0,
+                 from content_encoding.c:25:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-content_encoding.lo -MD -MP -MF .deps/libcurl_la-content_encoding.TPlo -c content_encoding.c -fPIC -DPIC -o .libs/libcurl_la-content_encoding.o
+Makefile:1552: recipe for target 'libcurl_la-content_encoding.lo' failed
+make[2]: *** [libcurl_la-content_encoding.lo] Error 1
+  CC       libcurl_la-share.lo
+In file included from urldata.h:98:0,
+                 from share.c:26:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-share.lo -MD -MP -MF .deps/libcurl_la-share.TPlo -c share.c -fPIC -DPIC -o .libs/libcurl_la-share.o
+Makefile:1559: recipe for target 'libcurl_la-share.lo' failed
+make[2]: *** [libcurl_la-share.lo] Error 1
+  CC       libcurl_la-http_digest.lo
+In file included from urldata.h:98:0,
+                 from http_digest.c:27:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-http_digest.lo -MD -MP -MF .deps/libcurl_la-http_digest.TPlo -c http_digest.c -fPIC -DPIC -o .libs/libcurl_la-http_digest.o
+Makefile:1566: recipe for target 'libcurl_la-http_digest.lo' failed
+make[2]: *** [libcurl_la-http_digest.lo] Error 1
+  CC       libcurl_la-md4.lo
+  CC       libcurl_la-md5.lo
+  CC       libcurl_la-http_negotiate.lo
+  CC       libcurl_la-inet_pton.lo
+  CC       libcurl_la-strtoofft.lo
+  CC       libcurl_la-strerror.lo
+In file included from urldata.h:98:0,
+                 from strerror.h:25,
+                 from strerror.c:46:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-strerror.lo -MD -MP -MF .deps/libcurl_la-strerror.TPlo -c strerror.c -fPIC -DPIC -o .libs/libcurl_la-strerror.o
+Makefile:1608: recipe for target 'libcurl_la-strerror.lo' failed
+make[2]: *** [libcurl_la-strerror.lo] Error 1
+  CC       libcurl_la-amigaos.lo
+  CC       libcurl_la-hostasyn.lo
+In file included from urldata.h:98:0,
+                 from hostasyn.c:48:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-hostasyn.lo -MD -MP -MF .deps/libcurl_la-hostasyn.TPlo -c hostasyn.c -fPIC -DPIC -o .libs/libcurl_la-hostasyn.o
+Makefile:1622: recipe for target 'libcurl_la-hostasyn.lo' failed
+make[2]: *** [libcurl_la-hostasyn.lo] Error 1
+  CC       libcurl_la-hostip4.lo
+  CC       libcurl_la-hostip6.lo
+In file included from urldata.h:98:0,
+                 from hostip6.c:48:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-hostip6.lo -MD -MP -MF .deps/libcurl_la-hostip6.TPlo -c hostip6.c -fPIC -DPIC -o .libs/libcurl_la-hostip6.o
+Makefile:1636: recipe for target 'libcurl_la-hostip6.lo' failed
+make[2]: *** [libcurl_la-hostip6.lo] Error 1
+  CC       libcurl_la-hostsyn.lo
+  CC       libcurl_la-inet_ntop.lo
+  CC       libcurl_la-parsedate.lo
+  CC       libcurl_la-select.lo
+In file included from urldata.h:98:0,
+                 from select.c:48:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-select.lo -MD -MP -MF .deps/libcurl_la-select.TPlo -c select.c -fPIC -DPIC -o .libs/libcurl_la-select.o
+Makefile:1664: recipe for target 'libcurl_la-select.lo' failed
+make[2]: *** [libcurl_la-select.lo] Error 1
+  CC       libcurl_la-tftp.lo
+tftp.c:1109:3: error: Incompatible pointer types in initializer or function call arguments.
+
+    Constraint violation (CV-TSE2):
+        see C11 section 6.7.9:11 http://rvdoc.org/C11/6.7.9
+        see C11 section 6.5.16.1:1 http://rvdoc.org/C11/6.5.16.1
+        see CERT-C section MSC40-C http://rvdoc.org/CERT-C/MSC40-C
+        see MISRA-C section 8.1:1 http://rvdoc.org/MISRA-C/8.1
+
+In file included from urldata.h:98:0,
+                 from tftp.c:47:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-tftp.lo -MD -MP -MF .deps/libcurl_la-tftp.TPlo -c tftp.c -fPIC -DPIC -o .libs/libcurl_la-tftp.o
+Makefile:1671: recipe for target 'libcurl_la-tftp.lo' failed
+make[2]: *** [libcurl_la-tftp.lo] Error 1
+  CC       libcurl_la-splay.lo
+splay.c:103:3: warning: Conversion to signed integer outside the range that can be represented.
+
+    Implementation defined behavior (IMPL-CCV2):
+        see C11 section 6.3.1.3:3 http://rvdoc.org/C11/6.3.1.3
+        see C11 section J.3.5:1 item 4 http://rvdoc.org/C11/J.3.5
+        see CERT-C section INT31-C http://rvdoc.org/CERT-C/INT31-C
+
+splay.c:213:3: warning: Conversion to signed integer outside the range that can be represented.
+
+    Implementation defined behavior (IMPL-CCV2):
+        see C11 section 6.3.1.3:3 http://rvdoc.org/C11/6.3.1.3
+        see C11 section J.3.5:1 item 4 http://rvdoc.org/C11/J.3.5
+        see CERT-C section INT31-C http://rvdoc.org/CERT-C/INT31-C
+
+  CC       libcurl_la-strdup.lo
+  CC       libcurl_la-socks.lo
+socks.c:69:7: error: Potential negative zero produced via bitwise operations, undefined under sign and magnitude or one's complement arithmetic, implementation-defined otherwise.
+
+    Implementation-dependent undefined behavior (IMPLUB-CEB12):
+        see C11 section 6.2.6.2:4 http://rvdoc.org/C11/6.2.6.2
+        see C11 section J.2:1 item 14 http://rvdoc.org/C11/J.2
+        see CERT-C section INT13-C http://rvdoc.org/CERT-C/INT13-C
+        see CERT-C section MSC15-C http://rvdoc.org/CERT-C/MSC15-C
+        see MISRA-C section 8.1:3 http://rvdoc.org/MISRA-C/8.1
+
+socks.c:85:7: error: Potential negative zero produced via bitwise operations, undefined under sign and magnitude or one's complement arithmetic, implementation-defined otherwise.
+
+    Implementation-dependent undefined behavior (IMPLUB-CEB12):
+        see C11 section 6.2.6.2:4 http://rvdoc.org/C11/6.2.6.2
+        see C11 section J.2:1 item 14 http://rvdoc.org/C11/J.2
+        see CERT-C section INT13-C http://rvdoc.org/CERT-C/INT13-C
+        see CERT-C section MSC15-C http://rvdoc.org/CERT-C/MSC15-C
+        see MISRA-C section 8.1:3 http://rvdoc.org/MISRA-C/8.1
+
+In file included from urldata.h:98:0,
+                 from socks.c:34:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-socks.lo -MD -MP -MF .deps/libcurl_la-socks.TPlo -c socks.c -fPIC -DPIC -o .libs/libcurl_la-socks.o
+Makefile:1692: recipe for target 'libcurl_la-socks.lo' failed
+make[2]: *** [libcurl_la-socks.lo] Error 1
+  CC       libcurl_la-ssh.lo
+  CC       libcurl_la-ssh-libssh.lo
+  CC       libcurl_la-curl_addrinfo.lo
+curl_addrinfo.c:116:1: error: conflicting types for ‘Curl_getaddrinfo_ex’
+ Curl_getaddrinfo_ex(const char *nodename,
+ ^
+In file included from curl_addrinfo.c:59:0:
+curl_addrinfo.h:68:1: note: previous declaration of ‘Curl_getaddrinfo_ex’ was here
+ Curl_getaddrinfo_ex(const char *nodename,
+ ^
+curl_addrinfo.c: In function ‘Curl_getaddrinfo_ex’:
+curl_addrinfo.c:137:39: error: dereferencing pointer to incomplete type ‘const struct addrinfo’
+   for(ai = aihead; ai != NULL; ai = ai->ai_next) {
+                                       ^
+curl_addrinfo.c:160:15: error: ‘EAI_MEMORY’ undeclared (first use in this function)
+       error = EAI_MEMORY;
+               ^
+curl_addrinfo.c:160:15: note: each undeclared identifier is reported only once for each function it appears in
+curl_addrinfo.c:220:13: error: ‘EAI_NODATA’ undeclared (first use in this function)
+     error = EAI_NODATA;
+             ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-curl_addrinfo.lo -MD -MP -MF .deps/libcurl_la-curl_addrinfo.TPlo -c curl_addrinfo.c -fPIC -DPIC -o .libs/libcurl_la-curl_addrinfo.o
+Makefile:1713: recipe for target 'libcurl_la-curl_addrinfo.lo' failed
+make[2]: *** [libcurl_la-curl_addrinfo.lo] Error 1
+  CC       libcurl_la-socks_gssapi.lo
+  CC       libcurl_la-socks_sspi.lo
+  CC       libcurl_la-curl_sspi.lo
+  CC       libcurl_la-slist.lo
+  CC       libcurl_la-nonblock.lo
+  CC       libcurl_la-curl_memrchr.lo
+  CC       libcurl_la-imap.lo
+In file included from urldata.h:98:0,
+                 from imap.c:62:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-imap.lo -MD -MP -MF .deps/libcurl_la-imap.TPlo -c imap.c -fPIC -DPIC -o .libs/libcurl_la-imap.o
+Makefile:1762: recipe for target 'libcurl_la-imap.lo' failed
+make[2]: *** [libcurl_la-imap.lo] Error 1
+  CC       libcurl_la-pop3.lo
+In file included from urldata.h:98:0,
+                 from pop3.c:64:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-pop3.lo -MD -MP -MF .deps/libcurl_la-pop3.TPlo -c pop3.c -fPIC -DPIC -o .libs/libcurl_la-pop3.o
+Makefile:1769: recipe for target 'libcurl_la-pop3.lo' failed
+make[2]: *** [libcurl_la-pop3.lo] Error 1
+  CC       libcurl_la-smtp.lo
+In file included from urldata.h:98:0,
+                 from smtp.c:63:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-smtp.lo -MD -MP -MF .deps/libcurl_la-smtp.TPlo -c smtp.c -fPIC -DPIC -o .libs/libcurl_la-smtp.o
+Makefile:1776: recipe for target 'libcurl_la-smtp.lo' failed
+make[2]: *** [libcurl_la-smtp.lo] Error 1
+  CC       libcurl_la-pingpong.lo
+In file included from urldata.h:98:0,
+                 from pingpong.c:28:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-pingpong.lo -MD -MP -MF .deps/libcurl_la-pingpong.TPlo -c pingpong.c -fPIC -DPIC -o .libs/libcurl_la-pingpong.o
+Makefile:1783: recipe for target 'libcurl_la-pingpong.lo' failed
+make[2]: *** [libcurl_la-pingpong.lo] Error 1
+  CC       libcurl_la-rtsp.lo
+In file included from urldata.h:98:0,
+                 from rtsp.c:27:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-rtsp.lo -MD -MP -MF .deps/libcurl_la-rtsp.TPlo -c rtsp.c -fPIC -DPIC -o .libs/libcurl_la-rtsp.o
+Makefile:1790: recipe for target 'libcurl_la-rtsp.lo' failed
+make[2]: *** [libcurl_la-rtsp.lo] Error 1
+  CC       libcurl_la-curl_threads.lo
+  CC       libcurl_la-warnless.lo
+warnless.c:355:3: warning: Conversion to signed integer outside the range that can be represented.
+
+    Implementation defined behavior (IMPL-CCV2):
+        see C11 section 6.3.1.3:3 http://rvdoc.org/C11/6.3.1.3
+        see C11 section J.3.5:1 item 4 http://rvdoc.org/C11/J.3.5
+        see CERT-C section INT31-C http://rvdoc.org/CERT-C/INT31-C
+
+  CC       libcurl_la-hmac.lo
+  CC       libcurl_la-curl_rtmp.lo
+  CC       libcurl_la-openldap.lo
+  CC       libcurl_la-curl_gethostname.lo
+  CC       libcurl_la-gopher.lo
+In file included from urldata.h:98:0,
+                 from gopher.c:27:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-gopher.lo -MD -MP -MF .deps/libcurl_la-gopher.TPlo -c gopher.c -fPIC -DPIC -o .libs/libcurl_la-gopher.o
+Makefile:1839: recipe for target 'libcurl_la-gopher.lo' failed
+make[2]: *** [libcurl_la-gopher.lo] Error 1
+  CC       libcurl_la-idn_win32.lo
+  CC       libcurl_la-http_proxy.lo
+In file included from urldata.h:98:0,
+                 from http_proxy.h:26,
+                 from http_proxy.c:25:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-http_proxy.lo -MD -MP -MF .deps/libcurl_la-http_proxy.TPlo -c http_proxy.c -fPIC -DPIC -o .libs/libcurl_la-http_proxy.o
+Makefile:1853: recipe for target 'libcurl_la-http_proxy.lo' failed
+make[2]: *** [libcurl_la-http_proxy.lo] Error 1
+  CC       libcurl_la-non-ascii.lo
+  CC       libcurl_la-asyn-ares.lo
+  CC       libcurl_la-asyn-thread.lo
+In file included from urldata.h:98:0,
+                 from asyn-thread.c:65:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+asyn-thread.c:168:19: error: field ‘hints’ has incomplete type
+   struct addrinfo hints;
+                   ^
+asyn-thread.c: In function ‘init_thread_sync_data’:
+asyn-thread.c:221:16: error: dereferencing pointer to incomplete type ‘const struct addrinfo’
+   tsd->hints = *hints;
+                ^
+asyn-thread.c: In function ‘getaddrinfo_thread’:
+asyn-thread.c:60:28: error: ‘EAI_MEMORY’ undeclared (first use in this function)
+ #  define RESOLVER_ENOMEM  EAI_MEMORY
+                            ^
+asyn-thread.c:286:25: note: in expansion of macro ‘RESOLVER_ENOMEM’
+       tsd->sock_error = RESOLVER_ENOMEM;
+                         ^
+asyn-thread.c:60:28: note: each undeclared identifier is reported only once for each function it appears in
+ #  define RESOLVER_ENOMEM  EAI_MEMORY
+                            ^
+asyn-thread.c:286:25: note: in expansion of macro ‘RESOLVER_ENOMEM’
+       tsd->sock_error = RESOLVER_ENOMEM;
+                         ^
+asyn-thread.c: In function ‘Curl_resolver_getaddrinfo’:
+asyn-thread.c:629:19: error: storage size of ‘hints’ isn’t known
+   struct addrinfo hints;
+                   ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-asyn-thread.lo -MD -MP -MF .deps/libcurl_la-asyn-thread.TPlo -c asyn-thread.c -fPIC -DPIC -o .libs/libcurl_la-asyn-thread.o
+Makefile:1874: recipe for target 'libcurl_la-asyn-thread.lo' failed
+make[2]: *** [libcurl_la-asyn-thread.lo] Error 1
+  CC       libcurl_la-curl_gssapi.lo
+  CC       libcurl_la-http_ntlm.lo
+In file included from urldata.h:98:0,
+                 from http_ntlm.c:36:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-http_ntlm.lo -MD -MP -MF .deps/libcurl_la-http_ntlm.TPlo -c http_ntlm.c -fPIC -DPIC -o .libs/libcurl_la-http_ntlm.o
+Makefile:1888: recipe for target 'libcurl_la-http_ntlm.lo' failed
+make[2]: *** [libcurl_la-http_ntlm.lo] Error 1
+  CC       libcurl_la-curl_ntlm_wb.lo
+In file included from urldata.h:98:0,
+                 from curl_ntlm_wb.c:47:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-curl_ntlm_wb.lo -MD -MP -MF .deps/libcurl_la-curl_ntlm_wb.TPlo -c curl_ntlm_wb.c -fPIC -DPIC -o .libs/libcurl_la-curl_ntlm_wb.o
+Makefile:1895: recipe for target 'libcurl_la-curl_ntlm_wb.lo' failed
+make[2]: *** [libcurl_la-curl_ntlm_wb.lo] Error 1
+  CC       libcurl_la-curl_ntlm_core.lo
+In file included from urldata.h:98:0,
+                 from curl_ntlm_core.c:128:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-curl_ntlm_core.lo -MD -MP -MF .deps/libcurl_la-curl_ntlm_core.TPlo -c curl_ntlm_core.c -fPIC -DPIC -o .libs/libcurl_la-curl_ntlm_core.o
+Makefile:1902: recipe for target 'libcurl_la-curl_ntlm_core.lo' failed
+make[2]: *** [libcurl_la-curl_ntlm_core.lo] Error 1
+  CC       libcurl_la-curl_sasl.lo
+In file included from urldata.h:98:0,
+                 from curl_sasl.c:35:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-curl_sasl.lo -MD -MP -MF .deps/libcurl_la-curl_sasl.TPlo -c curl_sasl.c -fPIC -DPIC -o .libs/libcurl_la-curl_sasl.o
+Makefile:1909: recipe for target 'libcurl_la-curl_sasl.lo' failed
+make[2]: *** [libcurl_la-curl_sasl.lo] Error 1
+  CC       libcurl_la-rand.lo
+In file included from ../lib/urldata.h:98:0,
+                 from vtls/openssl.h:32,
+                 from vtls/vtls.h:101,
+                 from rand.c:30:
+../lib/hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-rand.lo -MD -MP -MF .deps/libcurl_la-rand.TPlo -c rand.c -fPIC -DPIC -o .libs/libcurl_la-rand.o
+Makefile:1916: recipe for target 'libcurl_la-rand.lo' failed
+make[2]: *** [libcurl_la-rand.lo] Error 1
+  CC       libcurl_la-curl_multibyte.lo
+  CC       libcurl_la-hostcheck.lo
+  CC       libcurl_la-conncache.lo
+sigpipe.h:54:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+In file included from urldata.h:98:0,
+                 from conncache.c:28:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+In file included from conncache.c:35:0:
+sigpipe.h:30:20: error: field ‘old_pipe_act’ has incomplete type
+   struct sigaction old_pipe_act;
+                    ^
+sigpipe.h: In function ‘sigpipe_ignore’:
+sigpipe.h:48:22: error: storage size of ‘action’ isn’t known
+     struct sigaction action;
+                      ^
+sigpipe.h:50:41: error: invalid application of ‘sizeof’ to incomplete type ‘struct sigaction’
+     memset(&ig->old_pipe_act, 0, sizeof(struct sigaction));
+                                         ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-conncache.lo -MD -MP -MF .deps/libcurl_la-conncache.TPlo -c conncache.c -fPIC -DPIC -o .libs/libcurl_la-conncache.o
+Makefile:1937: recipe for target 'libcurl_la-conncache.lo' failed
+make[2]: *** [libcurl_la-conncache.lo] Error 1
+  CC       libcurl_la-pipeline.lo
+In file included from urldata.h:98:0,
+                 from pipeline.c:28:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-pipeline.lo -MD -MP -MF .deps/libcurl_la-pipeline.TPlo -c pipeline.c -fPIC -DPIC -o .libs/libcurl_la-pipeline.o
+Makefile:1944: recipe for target 'libcurl_la-pipeline.lo' failed
+make[2]: *** [libcurl_la-pipeline.lo] Error 1
+  CC       libcurl_la-dotdot.lo
+  CC       libcurl_la-x509asn1.lo
+  CC       libcurl_la-http2.lo
+  CC       libcurl_la-smb.lo
+In file included from urldata.h:98:0,
+                 from smb.c:43:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-smb.lo -MD -MP -MF .deps/libcurl_la-smb.TPlo -c smb.c -fPIC -DPIC -o .libs/libcurl_la-smb.o
+Makefile:1972: recipe for target 'libcurl_la-smb.lo' failed
+make[2]: *** [libcurl_la-smb.lo] Error 1
+  CC       libcurl_la-curl_endian.lo
+  CC       libcurl_la-curl_des.lo
+  CC       libcurl_la-system_win32.lo
+  CC       libcurl_la-mime.lo
+In file included from urldata.h:98:0,
+                 from mime.c:29:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-mime.lo -MD -MP -MF .deps/libcurl_la-mime.TPlo -c mime.c -fPIC -DPIC -o .libs/libcurl_la-mime.o
+Makefile:2000: recipe for target 'libcurl_la-mime.lo' failed
+make[2]: *** [libcurl_la-mime.lo] Error 1
+  CC       libcurl_la-sha256.lo
+  CC       libcurl_la-setopt.lo
+setopt.c:535:7: warning: Conversion to signed integer outside the range that can be represented.
+
+    Implementation defined behavior (IMPL-CCV2):
+        see C11 section 6.3.1.3:3 http://rvdoc.org/C11/6.3.1.3
+        see C11 section J.3.5:1 item 4 http://rvdoc.org/C11/J.3.5
+        see CERT-C section INT31-C http://rvdoc.org/CERT-C/INT31-C
+
+In file included from urldata.h:98:0,
+                 from setopt.c:35:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-setopt.lo -MD -MP -MF .deps/libcurl_la-setopt.TPlo -c setopt.c -fPIC -DPIC -o .libs/libcurl_la-setopt.o
+Makefile:2014: recipe for target 'libcurl_la-setopt.lo' failed
+make[2]: *** [libcurl_la-setopt.lo] Error 1
+  CC       libcurl_la-curl_path.lo
+In file included from urldata.h:98:0,
+                 from curl_path.h:27,
+                 from curl_path.c:27:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-curl_path.lo -MD -MP -MF .deps/libcurl_la-curl_path.TPlo -c curl_path.c -fPIC -DPIC -o .libs/libcurl_la-curl_path.o
+Makefile:2021: recipe for target 'libcurl_la-curl_path.lo' failed
+make[2]: *** [libcurl_la-curl_path.lo] Error 1
+  CC       libcurl_la-curl_ctype.lo
+  CC       libcurl_la-curl_range.lo
+In file included from urldata.h:98:0,
+                 from curl_range.h:26,
+                 from curl_range.c:25:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-curl_range.lo -MD -MP -MF .deps/libcurl_la-curl_range.TPlo -c curl_range.c -fPIC -DPIC -o .libs/libcurl_la-curl_range.o
+Makefile:2035: recipe for target 'libcurl_la-curl_range.lo' failed
+make[2]: *** [libcurl_la-curl_range.lo] Error 1
+  CC       libcurl_la-psl.lo
+  CC       libcurl_la-doh.lo
+In file included from urldata.h:98:0,
+                 from doh.c:24:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-doh.lo -MD -MP -MF .deps/libcurl_la-doh.TPlo -c doh.c -fPIC -DPIC -o .libs/libcurl_la-doh.o
+Makefile:2049: recipe for target 'libcurl_la-doh.lo' failed
+make[2]: *** [libcurl_la-doh.lo] Error 1
+  CC       libcurl_la-urlapi.lo
+In file included from urldata.h:98:0,
+                 from urlapi.c:25:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT libcurl_la-urlapi.lo -MD -MP -MF .deps/libcurl_la-urlapi.TPlo -c urlapi.c -fPIC -DPIC -o .libs/libcurl_la-urlapi.o
+Makefile:2056: recipe for target 'libcurl_la-urlapi.lo' failed
+make[2]: *** [libcurl_la-urlapi.lo] Error 1
+  CC       vauth/libcurl_la-vauth.lo
+  CC       vauth/libcurl_la-cleartext.lo
+In file included from ../lib/urldata.h:98:0,
+                 from vauth/cleartext.c:29:
+../lib/hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT vauth/libcurl_la-cleartext.lo -MD -MP -MF vauth/.deps/libcurl_la-cleartext.TPlo -c vauth/cleartext.c -fPIC -DPIC -o vauth/.libs/libcurl_la-cleartext.o
+Makefile:2070: recipe for target 'vauth/libcurl_la-cleartext.lo' failed
+make[2]: *** [vauth/libcurl_la-cleartext.lo] Error 1
+  CC       vauth/libcurl_la-cram.lo
+In file included from ../lib/urldata.h:98:0,
+                 from vauth/cram.c:30:
+../lib/hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT vauth/libcurl_la-cram.lo -MD -MP -MF vauth/.deps/libcurl_la-cram.TPlo -c vauth/cram.c -fPIC -DPIC -o vauth/.libs/libcurl_la-cram.o
+Makefile:2077: recipe for target 'vauth/libcurl_la-cram.lo' failed
+make[2]: *** [vauth/libcurl_la-cram.lo] Error 1
+  CC       vauth/libcurl_la-digest.lo
+In file included from ../lib/urldata.h:98:0,
+                 from vauth/digest.c:34:
+../lib/hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT vauth/libcurl_la-digest.lo -MD -MP -MF vauth/.deps/libcurl_la-digest.TPlo -c vauth/digest.c -fPIC -DPIC -o vauth/.libs/libcurl_la-digest.o
+Makefile:2084: recipe for target 'vauth/libcurl_la-digest.lo' failed
+make[2]: *** [vauth/libcurl_la-digest.lo] Error 1
+  CC       vauth/libcurl_la-digest_sspi.lo
+  CC       vauth/libcurl_la-krb5_gssapi.lo
+  CC       vauth/libcurl_la-krb5_sspi.lo
+  CC       vauth/libcurl_la-ntlm.lo
+In file included from ../lib/urldata.h:98:0,
+                 from vauth/ntlm.c:36:
+../lib/hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT vauth/libcurl_la-ntlm.lo -MD -MP -MF vauth/.deps/libcurl_la-ntlm.TPlo -c vauth/ntlm.c -fPIC -DPIC -o vauth/.libs/libcurl_la-ntlm.o
+Makefile:2112: recipe for target 'vauth/libcurl_la-ntlm.lo' failed
+make[2]: *** [vauth/libcurl_la-ntlm.lo] Error 1
+  CC       vauth/libcurl_la-ntlm_sspi.lo
+  CC       vauth/libcurl_la-oauth2.lo
+In file included from ../lib/urldata.h:98:0,
+                 from vauth/oauth2.c:28:
+../lib/hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT vauth/libcurl_la-oauth2.lo -MD -MP -MF vauth/.deps/libcurl_la-oauth2.TPlo -c vauth/oauth2.c -fPIC -DPIC -o vauth/.libs/libcurl_la-oauth2.o
+Makefile:2126: recipe for target 'vauth/libcurl_la-oauth2.lo' failed
+make[2]: *** [vauth/libcurl_la-oauth2.lo] Error 1
+  CC       vauth/libcurl_la-spnego_gssapi.lo
+  CC       vauth/libcurl_la-spnego_sspi.lo
+  CC       vtls/libcurl_la-openssl.lo
+In file included from ../lib/urldata.h:98:0,
+                 from vtls/openssl.c:39:
+../lib/hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT vtls/libcurl_la-openssl.lo -MD -MP -MF vtls/.deps/libcurl_la-openssl.TPlo -c vtls/openssl.c -fPIC -DPIC -o vtls/.libs/libcurl_la-openssl.o
+Makefile:2147: recipe for target 'vtls/libcurl_la-openssl.lo' failed
+make[2]: *** [vtls/libcurl_la-openssl.lo] Error 1
+  CC       vtls/libcurl_la-gtls.lo
+  CC       vtls/libcurl_la-vtls.lo
+In file included from ../lib/urldata.h:98:0,
+                 from vtls/vtls.c:51:
+../lib/hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT vtls/libcurl_la-vtls.lo -MD -MP -MF vtls/.deps/libcurl_la-vtls.TPlo -c vtls/vtls.c -fPIC -DPIC -o vtls/.libs/libcurl_la-vtls.o
+Makefile:2161: recipe for target 'vtls/libcurl_la-vtls.lo' failed
+make[2]: *** [vtls/libcurl_la-vtls.lo] Error 1
+  CC       vtls/libcurl_la-nss.lo
+  CC       vtls/libcurl_la-polarssl.lo
+  CC       vtls/libcurl_la-polarssl_threadlock.lo
+  CC       vtls/libcurl_la-axtls.lo
+  CC       vtls/libcurl_la-cyassl.lo
+  CC       vtls/libcurl_la-schannel.lo
+  CC       vtls/libcurl_la-schannel_verify.lo
+  CC       vtls/libcurl_la-darwinssl.lo
+In file included from ../lib/urldata.h:98:0,
+                 from vtls/darwinssl.c:31:
+../lib/hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -O2 -Wno-system-headers -pthread -w -MT vtls/libcurl_la-darwinssl.lo -MD -MP -MF vtls/.deps/libcurl_la-darwinssl.TPlo -c vtls/darwinssl.c -fPIC -DPIC -o vtls/.libs/libcurl_la-darwinssl.o
+Makefile:2217: recipe for target 'vtls/libcurl_la-darwinssl.lo' failed
+make[2]: *** [vtls/libcurl_la-darwinssl.lo] Error 1
+  CC       vtls/libcurl_la-gskit.lo
+  CC       vtls/libcurl_la-mbedtls.lo
+  CC       vtls/libcurl_la-mesalink.lo
+make[2]: Target 'all-am' not remade because of errors.
+make[2]: Leaving directory '/home/andy/Desktop/test598/curlMini/cs510Files/curl-origin/lib'
+Makefile:754: recipe for target 'all' failed
+make[1]: *** [all] Error 2
+make[1]: Leaving directory '/home/andy/Desktop/test598/curlMini/cs510Files/curl-origin/lib'
+Making all in src
+make[1]: Entering directory '/home/andy/Desktop/test598/curlMini/cs510Files/curl-origin/src'
+Making all in ../docs
+make[2]: Entering directory '/home/andy/Desktop/test598/curlMini/cs510Files/curl-origin/docs'
+Making all in .
+make[3]: Entering directory '/home/andy/Desktop/test598/curlMini/cs510Files/curl-origin/docs'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/andy/Desktop/test598/curlMini/cs510Files/curl-origin/docs'
+Making all in cmdline-opts
+make[3]: Entering directory '/home/andy/Desktop/test598/curlMini/cs510Files/curl-origin/docs/cmdline-opts'
+/usr/bin/perl ./gen.pl mainpage . > ../../docs/curl.1
+make[3]: Leaving directory '/home/andy/Desktop/test598/curlMini/cs510Files/curl-origin/docs/cmdline-opts'
+make[2]: Leaving directory '/home/andy/Desktop/test598/curlMini/cs510Files/curl-origin/docs'
+make[2]: Entering directory '/home/andy/Desktop/test598/curlMini/cs510Files/curl-origin/src'
+  CC       curl-slist_wc.o
+  CC       curl-tool_binmode.o
+  CC       curl-tool_bname.o
+  CC       curl-tool_cb_dbg.o
+  CC       curl-tool_cb_hdr.o
+  CC       curl-tool_cb_prg.o
+  CC       curl-tool_cb_rea.o
+  CC       curl-tool_cb_see.o
+  CC       curl-tool_cb_wrt.o
+  CC       curl-tool_cfgable.o
+tool_cfgable.c:37:3: error: Potential negative zero produced via bitwise operations, undefined under sign and magnitude or one's complement arithmetic, implementation-defined otherwise.
+
+    Implementation-dependent undefined behavior (IMPLUB-CEB12):
+        see C11 section 6.2.6.2:4 http://rvdoc.org/C11/6.2.6.2
+        see C11 section J.2:1 item 14 http://rvdoc.org/C11/J.2
+        see CERT-C section INT13-C http://rvdoc.org/CERT-C/INT13-C
+        see CERT-C section MSC15-C http://rvdoc.org/CERT-C/MSC15-C
+        see MISRA-C section 8.1:3 http://rvdoc.org/MISRA-C/8.1
+
+tool_cfgable.c:39:3: error: Potential negative zero produced via bitwise operations, undefined under sign and magnitude or one's complement arithmetic, implementation-defined otherwise.
+
+    Implementation-dependent undefined behavior (IMPLUB-CEB12):
+        see C11 section 6.2.6.2:4 http://rvdoc.org/C11/6.2.6.2
+        see C11 section J.2:1 item 14 http://rvdoc.org/C11/J.2
+        see CERT-C section INT13-C http://rvdoc.org/CERT-C/INT13-C
+        see CERT-C section MSC15-C http://rvdoc.org/CERT-C/MSC15-C
+        see MISRA-C section 8.1:3 http://rvdoc.org/MISRA-C/8.1
+
+  CC       curl-tool_convert.o
+  CC       curl-tool_dirhie.o
+  CC       curl-tool_doswin.o
+  CC       curl-tool_easysrc.o
+  CC       curl-tool_filetime.o
+  CC       curl-tool_formparse.o
+  CC       curl-tool_getparam.o
+  CC       curl-tool_getpass.o
+  CC       curl-tool_help.o
+  CC       curl-tool_helpers.o
+  CC       curl-tool_homedir.o
+echo '#include "tool_setup.h"' > tool_hugehelp.c
+echo '#ifndef HAVE_LIBZ' >> tool_hugehelp.c
+env LC_ALL=C /usr/bin/nroff -man  /home/andy/Desktop/test598/curl/docs/curl.1 | /usr/bin/perl ../src/mkhelp.pl ../docs/MANUAL >> tool_hugehelp.c
+echo '#else' >> tool_hugehelp.c
+env LC_ALL=C /usr/bin/nroff -man  /home/andy/Desktop/test598/curl/docs/curl.1 | /usr/bin/perl ../src/mkhelp.pl -c ../docs/MANUAL >> tool_hugehelp.c
+echo '#endif /* HAVE_LIBZ */' >> tool_hugehelp.c
+  CC       curl-tool_hugehelp.o
+Segmentation fault (core dumped)
+Translation failed. To repeat, run this command in directory src:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../src -I../lib -I../src -O2 -Wno-system-headers -pthread -w -MT curl-tool_hugehelp.o -MD -MP -MF .deps/curl-tool_hugehelp.TPo -c -o curl-tool_hugehelp.o tool_hugehelp.c
+Makefile:1560: recipe for target 'curl-tool_hugehelp.o' failed
+make[2]: *** [curl-tool_hugehelp.o] Error 139
+  CC       curl-tool_libinfo.o
+  CC       curl-tool_main.o
+tool_main.c:251:3: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+  CC       curl-tool_metalink.o
+  CC       curl-tool_msgs.o
+  CC       curl-tool_operate.o
+tool_operate.c:893:18: warning: Conversion to signed integer outside the range that can be represented.
+
+    Implementation defined behavior (IMPL-CCV2):
+        see C11 section 6.3.1.3:3 http://rvdoc.org/C11/6.3.1.3
+        see C11 section J.3.5:1 item 4 http://rvdoc.org/C11/J.3.5
+        see CERT-C section INT31-C http://rvdoc.org/CERT-C/INT31-C
+
+  CC       curl-tool_operhlp.o
+  CC       curl-tool_panykey.o
+  CC       curl-tool_paramhlp.o
+tool_paramhlp.c:275:3: error: Potential negative zero produced via bitwise operations, undefined under sign and magnitude or one's complement arithmetic, implementation-defined otherwise.
+
+    Implementation-dependent undefined behavior (IMPLUB-CEB12):
+        see C11 section 6.2.6.2:4 http://rvdoc.org/C11/6.2.6.2
+        see C11 section J.2:1 item 14 http://rvdoc.org/C11/J.2
+        see CERT-C section INT13-C http://rvdoc.org/CERT-C/INT13-C
+        see CERT-C section MSC15-C http://rvdoc.org/CERT-C/MSC15-C
+        see MISRA-C section 8.1:3 http://rvdoc.org/MISRA-C/8.1
+
+  CC       curl-tool_parsecfg.o
+  CC       curl-tool_strdup.o
+  CC       curl-tool_setopt.o
+tool_setopt.c:139:1: error: Potential negative zero produced via bitwise operations, undefined under sign and magnitude or one's complement arithmetic, implementation-defined otherwise.
+
+    Implementation-dependent undefined behavior (IMPLUB-CEB12):
+        see C11 section 6.2.6.2:4 http://rvdoc.org/C11/6.2.6.2
+        see C11 section J.2:1 item 14 http://rvdoc.org/C11/J.2
+        see CERT-C section INT13-C http://rvdoc.org/CERT-C/INT13-C
+        see CERT-C section MSC15-C http://rvdoc.org/CERT-C/MSC15-C
+        see MISRA-C section 8.1:3 http://rvdoc.org/MISRA-C/8.1
+
+  CC       curl-tool_sleep.o
+  CC       curl-tool_urlglob.o
+  CC       curl-tool_util.o
+tool_util.c: In function ‘tvnow’:
+tool_util.c:66:25: error: ‘CLOCK_MONOTONIC’ undeclared (first use in this function)
+   if(0 == clock_gettime(CLOCK_MONOTONIC, &tsnow)) {
+                         ^
+tool_util.c:66:25: note: each undeclared identifier is reported only once for each function it appears in
+Translation failed. To repeat, run this command in directory src:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../src -I../lib -I../src -O2 -Wno-system-headers -pthread -w -MT curl-tool_util.o -MD -MP -MF .deps/curl-tool_util.TPo -c -o curl-tool_util.o tool_util.c
+Makefile:1756: recipe for target 'curl-tool_util.o' failed
+make[2]: *** [curl-tool_util.o] Error 1
+  CC       curl-tool_vms.o
+  CC       curl-tool_writeout.o
+  CC       curl-tool_xattr.o
+  CC       ../lib/curl-strtoofft.o
+  CC       ../lib/curl-nonblock.o
+  CC       ../lib/curl-warnless.o
+../lib/warnless.c:355:3: warning: Conversion to signed integer outside the range that can be represented.
+
+    Implementation defined behavior (IMPL-CCV2):
+        see C11 section 6.3.1.3:3 http://rvdoc.org/C11/6.3.1.3
+        see C11 section J.3.5:1 item 4 http://rvdoc.org/C11/J.3.5
+        see CERT-C section INT31-C http://rvdoc.org/CERT-C/INT31-C
+
+  CC       ../lib/curl-curl_ctype.o
+make[2]: *** No rule to make target '../lib/libcurl.la', needed by 'curl'.
+make[2]: Target 'all-am' not remade because of errors.
+make[2]: Leaving directory '/home/andy/Desktop/test598/curlMini/cs510Files/curl-origin/src'
+Makefile:1879: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Target 'all' not remade because of errors.
+make[1]: Leaving directory '/home/andy/Desktop/test598/curlMini/cs510Files/curl-origin/src'
+make[1]: Entering directory '/home/andy/Desktop/test598/curlMini/cs510Files/curl-origin'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/home/andy/Desktop/test598/curlMini/cs510Files/curl-origin'
+Makefile:929: recipe for target 'all-recursive' failed
+make: *** [all-recursive] Error 1
+make: Target 'all' not remade because of errors.

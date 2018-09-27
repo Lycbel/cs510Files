@@ -348,8 +348,8 @@ CC = gcc
 CCDEPMODE = depmode=kcc3
 
 # This might hold
-CFLAGS = -Werror-implicit-function-declaration -O2 -Wno-system-headers -pthread  $(CODE_COVERAGE_CFLAGS)
-CFLAG_CURL_SYMBOL_HIDING = -fvisibility=hidden
+CFLAGS = -O2 -Wno-system-headers -pthread -w $(CODE_COVERAGE_CFLAGS)
+CFLAG_CURL_SYMBOL_HIDING =
 CODE_COVERAGE_CFLAGS = 
 CODE_COVERAGE_CPPFLAGS = 
 CODE_COVERAGE_CXXFLAGS = 
