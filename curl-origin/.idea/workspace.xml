@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="false">
+    <generated />
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="18649529-76b0-4621-9a07-2a3019588bef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/CMake/CMakeConfigurableFile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMake/CurlSymbolHiding.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMake/CurlTests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMake/FindBrotli.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMake/FindCARES.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMake/FindGSS.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMake/FindLibSSH2.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMake/FindMbedTLS.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMake/FindNGHTTP2.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMake/Macros.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMake/OtherTests.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMake/Platforms/WindowsCache.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMake/Utilities.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMake/cmake_uninstall.cmake.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMake/curl-config.cmake.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/easy.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/easy.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hostip.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/hostip.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/timeval.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/timeval.c" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-759713783">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="Makefile" value="4" />
+          <entry key="c" value="5" />
+          <entry key="h" value="7" />
+          <entry key="txt" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="1" />
+          <entry key="ObjectiveC" value="12" />
+          <entry key="PLAIN_TEXT" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Makefile" value="102" />
+          <entry key="c" value="45" />
+          <entry key="h" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="ObjectiveC" value="47" />
+          <entry key="PLAIN_TEXT" value="102" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/timeval.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+              <folding>
+                <element signature="e#1164#1194#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/file.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/pop3.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+              <folding>
+                <element signature="e#1646#1669#0" expanded="true" />
+                <element signature="e#1701#1723#0" expanded="true" />
+                <element signature="e#1753#1777#0" expanded="true" />
+                <element signature="e#1805#1823#0" expanded="true" />
+                <element signature="e#1844#1877#0" expanded="true" />
+                <element signature="e#1937#1985#0" expanded="true" />
+                <element signature="e#2521#2545#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="419" column="61" selection-start-line="419" selection-start-column="61" selection-end-line="419" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/sigpipe.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="55" column="3" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/easy.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="715">
+              <caret line="178" selection-start-line="178" selection-end-line="178" selection-end-column="72" />
+              <folding>
+                <element signature="e#1167#1246#0" expanded="true" />
+                <element signature="e#1280#1303#0" expanded="true" />
+                <element signature="e#1331#1349#0" expanded="true" />
+                <element signature="e#1381#1403#0" expanded="true" />
+                <element signature="e#1432#1451#0" expanded="true" />
+                <element signature="e#1483#1505#0" expanded="true" />
+                <element signature="e#1538#1560#0" expanded="true" />
+                <element signature="e#2207#2231#0" expanded="true" />
+                <element signature="e#3706#3718#0" expanded="true" />
+                <element signature="e#3753#3841#0" expanded="true" />
+                <element signature="e#4238#4267#0" expanded="true" />
+                <element signature="e#4337#4365#0" expanded="true" />
+                <element signature="e#4435#4507#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/curl_memory.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="95" column="6" selection-start-line="95" selection-end-line="95" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/strdup.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/strdup.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/curl_setup.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
+              <folding>
+                <element signature="e#1141#1163#0" expanded="true" />
+                <element signature="e#1323#1336#0" expanded="true" />
+                <element signature="e#1358#1607#0" expanded="true" />
+                <element signature="e#1833#1862#0" expanded="true" />
+                <element signature="e#7414#7441#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>gcc</find>
+      <find>-Werror</find>
+      <find>hostip.h</find>
+      <find>strerror.h</find>
+      <find>install_sh</find>
+      <find>ZSH_VERSION</find>
+      <find>ool_formparse.c</find>
+      <find>extern sigjmp_buf curl_jmpenv</find>
+      <find>kcc</find>
+      <find>sigjmp_buf</find>
+      <find>sigj</find>
+      <find>time.h</find>
+      <find>CLOCK_MONOTONIC</find>
+      <find>sigaction</find>
+      <find>string.h</find>
+      <find>strdup</find>
+      <find>system_strdup</find>
+      <find>CC</find>
+      <find>cflags</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>kcc</replace>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Makefile" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/lib/hostip.h" />
+        <option value="$PROJECT_DIR$/lib/timeval.c" />
+        <option value="$PROJECT_DIR$/lib/easy.c" />
+        <option value="$PROJECT_DIR$/lib/Makefile" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="124" />
+    <option name="y" value="159" />
+    <option name="width" value="1398" />
+    <option name="height" value="992" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="curl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="curl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curl" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="18649529-76b0-4621-9a07-2a3019588bef" name="Default Changelist" comment="" />
+      <created>1537782426012</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537782426012</updated>
+      <workItem from="1537782429173" duration="4720000" />
+      <workItem from="1538005536147" duration="2281000" />
+      <workItem from="1538031301408" duration="8411000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="15412000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11553344" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3294979" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="CMake" order="11" visible="true" weight="0.06589958" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5220">
+          <caret line="348" selection-start-line="348" selection-end-line="348" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lua/hello.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1098" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="392" column="255" selection-start-line="392" selection-start-column="255" selection-end-line="392" selection-end-column="255" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/hostip.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="211" selection-start-line="211" selection-end-line="211" selection-end-column="43" />
+          <folding>
+            <element signature="e#1085#1108#0" expanded="true" />
+            <element signature="e#1194#1213#0" expanded="true" />
+            <element signature="e#1237#1285#0" expanded="true" />
+            <element signature="e#6943#6979#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/timeval.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding>
+            <element signature="e#1088#1771#0" expanded="true" />
+            <element signature="e#1817#2864#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/file.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="339" column="20" selection-start-line="339" selection-start-column="20" selection-end-line="339" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="866">
+          <caret line="1063" column="31" selection-start-line="1063" selection-start-column="31" selection-end-line="1063" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pop3.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          <folding>
+            <element signature="e#1646#1669#0" expanded="true" />
+            <element signature="e#1701#1723#0" expanded="true" />
+            <element signature="e#1753#1777#0" expanded="true" />
+            <element signature="e#1805#1823#0" expanded="true" />
+            <element signature="e#1844#1877#0" expanded="true" />
+            <element signature="e#1937#1985#0" expanded="true" />
+            <element signature="e#2521#2545#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/timeval.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <folding>
+            <element signature="e#1164#1194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/sigpipe.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="55" column="3" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/curl_setup.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="e#1141#1163#0" expanded="true" />
+            <element signature="e#1323#1336#0" expanded="true" />
+            <element signature="e#1358#1607#0" expanded="true" />
+            <element signature="e#1833#1862#0" expanded="true" />
+            <element signature="e#7414#7441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/strdup.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/strdup.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/curl_memory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="95" column="6" selection-start-line="95" selection-end-line="95" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/easy.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="178" selection-start-line="178" selection-end-line="178" selection-end-column="72" />
+          <folding>
+            <element signature="e#1167#1246#0" expanded="true" />
+            <element signature="e#1280#1303#0" expanded="true" />
+            <element signature="e#1331#1349#0" expanded="true" />
+            <element signature="e#1381#1403#0" expanded="true" />
+            <element signature="e#1432#1451#0" expanded="true" />
+            <element signature="e#1483#1505#0" expanded="true" />
+            <element signature="e#1538#1560#0" expanded="true" />
+            <element signature="e#2207#2231#0" expanded="true" />
+            <element signature="e#3706#3718#0" expanded="true" />
+            <element signature="e#3753#3841#0" expanded="true" />
+            <element signature="e#4238#4267#0" expanded="true" />
+            <element signature="e#4337#4365#0" expanded="true" />
+            <element signature="e#4435#4507#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="419" column="61" selection-start-line="419" selection-start-column="61" selection-end-line="419" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
