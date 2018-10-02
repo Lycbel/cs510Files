@@ -1,0 +1,152 @@
+report for kcc tool on curl project.
+problem: can't compile the project by replacing gcc by kcc
+
+
+OS: Ubuntu 16.04
+Java: 1.8.0_181
+kcc:    version 1.0 GNU-compatible
+
+	Build number: c9eaccf-1537409156414
+	Current profile: x86_64-linux-gcc-glibc
+	Installed profiles: x86_64-linux-gcc-glibc-gnuc-reverse-eval-order
+	                    x86_64-linux-gcc-glibc-gnuc
+	                    x86_64-linux-gcc-glibc
+	                    x86-gcc-limited-libc
+	                    x86_64-linux-gcc-glibc-reverse-eval-order
+	Default profile: x86_64-linux-gcc-glibc
+curl: https://github.com/curl/curl sha dee1700ce6ed2588f6db61fc9ca52ac8bccc71f8
+
+
+
+to regenerate the problem:(the bash can be found https://github.com/Lycbel/cs510Files/blob/master/bug_report_curl.sh )
+prerequisites: automake, libtool
+use the follow bash command:
+git clone https://github.com/curl/curl.git
+cd curl
+autoreconf -i
+./configure
+make CC=kcc
+it will fail with error:
+===========================error start =============================
+curl version:     7.62.0-DEV
+  Host setup:       x86_64-pc-linux-gnu
+  Install prefix:   /usr/local
+  Compiler:         gcc
+  SSL support:      no      (--with-{ssl,gnutls,nss,polarssl,mbedtls,cyassl,axtls,winssl,darwinssl,mesalink} )
+  SSH support:      no      (--with-libssh2)
+  zlib support:     no      (--with-zlib)
+  brotli support:   no      (--with-brotli)
+  GSS-API support:  no      (--with-gssapi)
+  TLS-SRP support:  no      (--enable-tls-srp)
+  resolver:         POSIX threaded
+  IPv6 support:     enabled
+  Unix sockets support: enabled
+  IDN support:      no      (--with-{libidn2,winidn})
+  Build libcurl:    Shared=yes, Static=yes
+  Built-in manual:  enabled
+  --libcurl option: enabled (--disable-libcurl-option)
+  Verbose errors:   enabled (--disable-verbose)
+  SSPI support:     no      (--enable-sspi)
+  ca cert bundle:   no
+  ca cert path:     
+  ca fallback:      
+  LDAP support:     no      (--enable-ldap / --with-ldap-lib / --with-lber-lib)
+  LDAPS support:    no      (--enable-ldaps)
+  RTSP support:     enabled
+  RTMP support:     no      (--with-librtmp)
+  metalink support: no      (--with-libmetalink)
+  PSL support:      no      (libpsl not found)
+  HTTP2 support:    disabled (--with-nghttp2)
+  Protocols:        DICT FILE FTP GOPHER HTTP IMAP POP3 RTSP SMTP TELNET TFTP
+
+Making all in lib
+make[1]: Entering directory '/home/andy/Desktop/hello/curl/lib'
+make  all-am
+make[2]: Entering directory '/home/andy/Desktop/hello/curl/lib'
+  CC       libcurl_la-file.lo
+Unsupported option: -fvisibility=hidden
+In file included from hostip.h:27:0,
+                 from urldata.h:98,
+                 from file.c:52:
+curl_addrinfo.h:71:21: warning: ‘struct addrinfo’ declared inside parameter list
+                     Curl_addrinfo **result);
+                     ^
+curl_addrinfo.h:71:21: warning: its scope is only this definition or declaration, which is probably not what you want
+In file included from urldata.h:98:0,
+                 from file.c:52:
+hostip.h:212:8: error: unknown type name ‘sigjmp_buf’
+ extern sigjmp_buf curl_jmpenv;
+        ^
+Translation failed. To repeat, run this command in directory lib:
+kcc -d -DHAVE_CONFIG_H -I../include -I../lib -I../lib -DBUILDING_LIBCURL -DCURL_HIDDEN_SYMBOLS -fvisibility=hidden -Werror-implicit-function-declaration -O2 -Wno-system-headers -pthread -MT libcurl_la-file.lo -MD -MP -MF .deps/libcurl_la-file.Tpo -c file.c -fPIC -DPIC -o .libs/libcurl_la-file.o
+Makefile:1284: recipe for target 'libcurl_la-file.lo' failed
+make[2]: *** [libcurl_la-file.lo] Error 1
+make[2]: Leaving directory '/home/andy/Desktop/hello/curl/lib'
+Makefile:754: recipe for target 'all' failed
+make[1]: *** [all] Error 2
+make[1]: Leaving directory '/home/andy/Desktop/hello/curl/lib'
+Makefile:929: recipe for target 'all-recursive' failed
+make: *** [all-recursive] Error 1
+===========================error end=============================
+
+minimized input:
+
+by removing the unsupported cflags in makefile and run 'make CC=kcc -k', can generate a clean list of errors. the folked and modified curl project is in the folder: https://github.com/Lycbel/cs510Files/tree/master/curl-origin cd this folder and use command 'bash generateErrorList.sh' it will store the error list in file error.list
+the minimized input is in the folder of https://github.com/Lycbel/cs510Files/tree/master/miniInput_curl
+there are many errors in the list, for errors occured in the first three files, I minimized the input for them:
+main.c main2.c and main3.c
+by the command 'bash mini_report_curl', it will create the same errors:
+
+===========================error start =============================
+andy@ubuntu:~/Desktop/test598/curlMini/cs510Files/miniInput_curl$ bash bug_report_curl.sh 
+-------------------------------------------------------------------------------- error case 1
+main.c:4:1: error: unknown type name ‘sigjmp_buf’
+ sigjmp_buf curl_jmpenv;
+ ^
+Translation failed (kcc_config dumped). To repeat, run this command in directory miniInput_curl:
+kcc -d -c main.c -o hello1
+-------------------------------------------------------------------------------- error case 2
+main2.c: In function ‘main’:
+main2.c:6:11: warning: implicit declaration of function ‘clock_gettime’ [-Wimplicit-function-declaration]
+   if(0 == clock_gettime(CLOCK_MONOTONIC, &tsnow)) {
+           ^
+main2.c:6:25: error: ‘CLOCK_MONOTONIC’ undeclared (first use in this function)
+   if(0 == clock_gettime(CLOCK_MONOTONIC, &tsnow)) {
+                         ^
+main2.c:6:25: note: each undeclared identifier is reported only once for each function it appears in
+Translation failed (kcc_config dumped). To repeat, run this command in directory miniInput_curl:
+kcc -d -c main2.c -o hello2
+-------------------------------------------------------------------------------- error case 3
+main3.c:6:20: error: field ‘old_pipe_act’ has incomplete type
+   struct sigaction old_pipe_act;// here will be one error1
+                    ^
+main3.c: In function ‘test1’:
+main3.c:13:18: error: storage size of ‘action’ isn’t known
+ struct sigaction action; // here will be one error2
+                  ^
+main3.c: In function ‘test’:
+main3.c:16:38: error: invalid application of ‘sizeof’ to incomplete type ‘struct sigaction’
+  memset(&ig->old_pipe_act, 0, sizeof(struct sigaction)); // here will be one er
+                                      ^
+main3.c: In function ‘test2’:
+main3.c:3:23: error: ‘strdup’ undeclared (first use in this function)
+ #define system_strdup strdup // here will be  error4
+                       ^
+main3.c:19:60: note: in expansion of macro ‘system_strdup’
+  curl_strdup_callback Curl_cstrdup = (curl_strdup_callback)system_strdup;// her
+                                                            ^
+main3.c:3:23: note: each undeclared identifier is reported only once for each function it appears in
+ #define system_strdup strdup // here will be  error4
+                       ^
+main3.c:19:60: note: in expansion of macro ‘system_strdup’
+  curl_strdup_callback Curl_cstrdup = (curl_strdup_callback)system_strdup;// her
+                                                            ^
+Translation failed (kcc_config dumped). To repeat, run this command in directory miniInput_curl:
+kcc -d -c main3.c -o hello3
+===========================error end=============================
+
+
+
+
+
+
