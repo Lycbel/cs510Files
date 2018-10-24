@@ -1,0 +1,5 @@
+  CCLD     libcurl.la
+/usr/bin/ld: .libs/libcurl_la-file.o: relocation R_X86_64_32 against `.rodata' can not be used when making a shared object; recompile with -fPIC
+.libs/libcurl_la-file.o: error adding symbols: Bad value
+collect2: error: ld returned 1 exit status
+Makefile:917: recipe for target 'libcurl.la' failed
