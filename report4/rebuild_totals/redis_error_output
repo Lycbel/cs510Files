@@ -1,0 +1,1472 @@
+make CC=kcc
+cd src && make all
+make[1]: Entering directory '/home/andy/Desktop/test/redis/src'
+    CC Makefile.dep
+    CC adlist.o
+Unsupported option: -ggdb
+    CC quicklist.o
+Unsupported option: -ggdb
+    CC ae.o
+Unsupported option: -ggdb
+    CC anet.o
+Unsupported option: -ggdb
+In file included from anet.c:31:0:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC dict.o
+Unsupported option: -ggdb
+In file included from dict.c:36:0:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+dict.c:746:5: error: Potential negative zero produced via bitwise operations, undefined under sign and magnitude or one's complement arithmetic, implementation-defined otherwise.
+
+    Implementation-dependent undefined behavior (IMPLUB-CEB12):
+        see C11 section 6.2.6.2:4 http://rvdoc.org/C11/6.2.6.2
+        see C11 section J.2:1 item 14 http://rvdoc.org/C11/J.2
+        see CERT-C section INT13-C http://rvdoc.org/CERT-C/INT13-C
+        see CERT-C section MSC15-C http://rvdoc.org/CERT-C/MSC15-C
+        see MISRA-C section 8.1:3 http://rvdoc.org/MISRA-C/8.1
+
+    CC server.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from server.c:30:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+server.c:1807:5: error: Incompatible pointer types in initializer or function call arguments.
+
+    Constraint violation (CV-TSE2):
+        see C11 section 6.7.9:11 http://rvdoc.org/C11/6.7.9
+        see C11 section 6.5.16.1:1 http://rvdoc.org/C11/6.5.16.1
+        see CERT-C section MSC40-C http://rvdoc.org/CERT-C/MSC40-C
+        see MISRA-C section 8.1:1 http://rvdoc.org/MISRA-C/8.1
+
+server.c:1828:17: error: Incompatible pointer types in initializer or function call arguments.
+
+    Constraint violation (CV-TSE2):
+        see C11 section 6.7.9:11 http://rvdoc.org/C11/6.7.9
+        see C11 section 6.5.16.1:1 http://rvdoc.org/C11/6.5.16.1
+        see CERT-C section MSC40-C http://rvdoc.org/CERT-C/MSC40-C
+        see MISRA-C section 8.1:1 http://rvdoc.org/MISRA-C/8.1
+
+server.c:2012:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+server.c:2013:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+server.c:3823:5: warning: Conversion to signed integer outside the range that can be represented.
+
+    Implementation defined behavior (IMPL-CCV2):
+        see C11 section 6.3.1.3:3 http://rvdoc.org/C11/6.3.1.3
+        see C11 section J.3.5:1 item 4 http://rvdoc.org/C11/J.3.5
+        see CERT-C section INT31-C http://rvdoc.org/CERT-C/INT31-C
+
+    CC sds.o
+Unsupported option: -ggdb
+    CC zmalloc.o
+Unsupported option: -ggdb
+    CC lzf_c.o
+Unsupported option: -ggdb
+    CC lzf_d.o
+Unsupported option: -ggdb
+lzf_d.c:57:9: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
+ #pragma GCC diagnostic ignored "-Wimplicit-fallthrough"
+         ^
+    CC pqsort.o
+Unsupported option: -ggdb
+    CC zipmap.o
+Unsupported option: -ggdb
+    CC sha1.o
+Unsupported option: -ggdb
+    CC ziplist.o
+Unsupported option: -ggdb
+    CC release.o
+Unsupported option: -ggdb
+    CC networking.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from networking.c:30:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC util.o
+Unsupported option: -ggdb
+In file included from util.c:30:0:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC object.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from object.c:31:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC db.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from db.c:30:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC replication.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from replication.c:32:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC rdb.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from rdb.c:30:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC t_string.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from t_string.c:30:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC t_list.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from t_list.c:30:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC t_set.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from t_set.c:30:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC t_zset.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from t_zset.c:59:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC t_hash.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from t_hash.c:30:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC config.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from config.c:31:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC aof.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from aof.c:30:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC pubsub.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from pubsub.c:30:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC multi.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from multi.c:30:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC debug.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from debug.c:30:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+debug.c:313:9: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+debug.c:612:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+debug.c:690:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+debug.c:1155:5: warning: Conversion to signed integer outside the range that can be represented.
+
+    Implementation defined behavior (IMPL-CCV2):
+        see C11 section 6.3.1.3:3 http://rvdoc.org/C11/6.3.1.3
+        see C11 section J.3.5:1 item 4 http://rvdoc.org/C11/J.3.5
+        see CERT-C section INT31-C http://rvdoc.org/CERT-C/INT31-C
+
+debug.c:1253:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+    CC sort.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from sort.c:32:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC intset.o
+Unsupported option: -ggdb
+    CC syncio.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from syncio.c:31:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC cluster.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from cluster.c:31:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC crc16.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from crc16.c:1:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC endianconv.o
+Unsupported option: -ggdb
+    CC slowlog.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from slowlog.c:42:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC scripting.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from scripting.c:30:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+scripting.c:1666:13: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+    CC bio.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from bio.c:61:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC rio.o
+Unsupported option: -ggdb
+In file included from rio.c:48:0:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC rand.o
+Unsupported option: -ggdb
+    CC memtest.o
+Unsupported option: -ggdb
+    CC crc64.o
+Unsupported option: -ggdb
+    CC bitops.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from bitops.c:31:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC sentinel.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from sentinel.c:31:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC notify.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from notify.c:30:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC setproctitle.o
+Unsupported option: -ggdb
+    CC blocked.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from blocked.c:66:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC hyperloglog.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from hyperloglog.c:32:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC latency.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from latency.c:36:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC sparkline.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from sparkline.c:33:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC redis-check-rdb.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from redis-check-rdb.c:30:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+redis-check-rdb.c:167:5: warning: Conversion to signed integer outside the range that can be represented.
+
+    Implementation defined behavior (IMPL-CCV2):
+        see C11 section 6.3.1.3:3 http://rvdoc.org/C11/6.3.1.3
+        see C11 section J.3.5:1 item 4 http://rvdoc.org/C11/J.3.5
+        see CERT-C section INT31-C http://rvdoc.org/CERT-C/INT31-C
+
+    CC redis-check-aof.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from redis-check-aof.c:31:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC geo.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from geo.h:4,
+                 from geo.c:31:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC lazyfree.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from lazyfree.c:1:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC module.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from module.c:30:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+module.c:505:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:525:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:2268:9: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:3395:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:3496:9: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:3643:13: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:3656:13: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:3714:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:3784:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:3912:13: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:3975:13: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4247:13: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4743:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4897:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4898:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4899:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4900:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4901:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4902:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4903:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4904:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4905:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4906:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4907:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4908:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4909:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4910:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4911:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4912:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4913:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4914:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4915:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4916:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4917:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4918:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4919:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4920:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4921:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4922:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4923:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4924:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4925:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4926:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4927:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4928:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4929:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4930:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4931:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4932:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4933:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4934:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4935:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4936:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4937:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4938:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4939:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4940:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4941:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4942:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4943:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4944:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4945:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4946:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4947:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4948:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4949:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4950:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4951:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4952:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4953:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4954:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4955:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4956:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4957:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4958:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4959:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4960:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4961:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4962:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4963:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4964:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4965:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4966:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4967:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4968:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4969:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4970:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4971:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4972:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4973:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4974:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4975:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4976:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4977:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4978:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4979:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4980:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4981:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4982:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4983:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4984:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4985:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4986:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4987:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4988:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4989:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4990:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4991:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4992:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4993:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4994:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4995:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4996:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4997:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4998:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:4999:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5000:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5001:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5002:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5003:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5004:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5005:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5006:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5007:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5008:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5009:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5010:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5011:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5012:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5013:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5014:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5015:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5016:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5017:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5018:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5019:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5020:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5021:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5022:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5023:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5024:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5025:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5026:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5027:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5028:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5029:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5030:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5031:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5032:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5033:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5034:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5035:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5036:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5037:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5038:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5039:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5040:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5041:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5042:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5043:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5044:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5045:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+module.c:5046:5: warning: Conversion from an integer to non-null pointer.
+
+    Implementation defined behavior (IMPL-CCV13):
+        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
+        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
+
+    CC evict.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from evict.c:33:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC expire.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from expire.c:33:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC geohash.o
+Unsupported option: -ggdb
+    CC geohash_helper.o
+Unsupported option: -ggdb
+In file included from geohash_helper.c:37:0:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC childinfo.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from childinfo.c:30:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC defrag.o
+Unsupported option: -ggdb
+In file included from server.h:33:0,
+                 from defrag.c:37:
+fmacros.h:37:0: warning: "_DEFAULT_SOURCE" redefined
+ #define _DEFAULT_SOURCE
+ ^
+<command-line>:0:0: note: this is the location of the previous definition
+    CC siphash.o
+Unsupported option: -ggdb
+    CC rax.o
+Unsupported option: -ggdb
+rax.c[202:16-23] : syntax error
+Translation failed (kcc_config dumped). To repeat, run this command in directory src:
+kcc -d -std=c99 -pedantic -DREDIS_STATIC= -Wall -W -Wno-missing-field-initializers -O2 -g -ggdb -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -I../deps/jemalloc/include -c rax.c
+Makefile:232: recipe for target 'rax.o' failed
+make[1]: *** [rax.o] Error 1
+make[1]: Leaving directory '/home/andy/Desktop/test/redis/src'
+Makefile:6: recipe for target 'all' failed
+make: *** [all] Error 2
+
