@@ -1,3 +1,4 @@
+
 TEMP=/home/andy/Desktop/test/libtooltest/temp
 CC=gcc
 if [ ! -d ".libs" ];then

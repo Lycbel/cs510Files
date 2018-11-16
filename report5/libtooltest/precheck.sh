@@ -1,9 +1,14 @@
 #java kcc can't use this
+#$1 is command $2 will be the package name if empty will use $1 as package name
 function checkNativeCommandAv() {
  if [ -z "$($1 --version 2>&1 >/dev/null)" ]; then
  echo "$1 is already installed"
 else
- sudo apt install "$1"
+ if [ -z $2 ];then
+  sudo apt install "$1"
+ else
+  sudo apt install "$2"
+ fi
 fi
 }
 #check make
@@ -25,5 +30,5 @@ else
  sudo java -jar temp.jar
 fi
 #check for libtool
-checkNativeCommandAv libtool
+checkNativeCommandAv libtool libtool-bin
 
