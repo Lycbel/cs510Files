@@ -12,8 +12,7 @@ else
 fi
 }
 function checkPackage(){
-RE=$(dpkg -l $1)
-if [ "$RE" ];then
+if dpkg -s $1 >/dev/null 2>&1 ;then
   echo "$1 already installed"
 else
   sudo apt install $1;
