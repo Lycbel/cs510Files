@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>RV Toolkit Error Report</title>
+  <link rel="icon" href="./static/favicon.ico" type="image/x-icon"/> 
+  <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon"/>
+  
+<link href="./static/style.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="./static/styles/datatables.min.css"/>
+<script src="./static/scripts/datatables.min.js"></script>
+<script src="./static/scripts/jquery.highlight.js"></script>
+<script src="./static/scripts/index.js"></script>
+<script src="./static/scripts/message.js"></script>
+
+
+</head>
+<body>
+  
+<div id="table-header">
+  <div>
+    <h1><img class="home-icon" src="static/rv_logo.png" alt="Runtime Verification"/> RV Toolkit Error Report</h1>
+  </div>
+  <div id="table-filter" class="dataTables_filter group">
+    <input id="table-search" class="" aria-controls="myTable" type="search" required>
+    <span class="highlight"></span>
+    <span class="bar"></span>
+    <label>Search</label>
+  </div>
+</div>
+<table id="myTable" class="tablesorter myTable">
+  <thead>
+    <tr>
+      <th class="dt-right">
+        <div class="table-header-wrapper">
+        <div class="table-header"><img class="drag-indicator" src="static/images/drag_indicator.svg"></div> 
+        <div>Error</div>
+        </div>
+      </th>
+      <th class="dt-right">
+        <div class="table-header-wrapper">
+        <div class="table-header"><img class="drag-indicator" src="static/images/drag_indicator.svg"></div> 
+        <div>File:Line</div>
+        </div>
+      </th>
+      <th class="dt-right">
+        <div class="table-header-wrapper">
+        <div class="table-header"><img class="drag-indicator" src="static/images/drag_indicator.svg"></div> 
+        <div>Error ID</div>
+        </div>
+      </th>
+      <th class="dt-right">
+        <div class="table-header-wrapper">
+        <div class="table-header"><img class="drag-indicator" src="static/images/drag_indicator.svg"></div> 
+        <div>Error Frequency</div>
+        </div>
+      </th>
+      <th class="dt-right">
+        <div class="table-header-wrapper">
+        <div class="table-header"><img class="drag-indicator" src="static/images/drag_indicator.svg"></div> 
+        <div>Function</div>
+        </div>
+      </th>
+      <!--
+      <th class="dt-right">ID</th>
+      <th class="dt-left">Error</th>
+      <th class="dt-left">Function</th>
+      <th class="dt-left">File:Line</th>
+      <th class="dt-right">Error Frequency</th>
+      -->
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td>
+        <div class="td-content-wrapper">
+          <div class="td-content">
+            <a href="error-0.html">Trying to look up identifier printf, but no such identifier is in scope. (SE-CID1)</a>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="td-content-wrapper">
+          <div class="td-content">
+          
+            <a href=".//home/andy/Desktop/test598/enchive/src/curve25519-donna.c.html?lineno=226">src/curve25519-donna.c:226</a>
+          
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="td-content-wrapper">
+          <div class="td-content">0</div>
+        </div>
+      </td>
+      <td>
+        <div class="td-content-wrapper">
+          <div class="td-content">1</div>
+        </div>
+      </td>
+      <td>
+        <div class="td-content-wrapper">
+          <div class="td-content">freduce_degree</div>
+        </div>
+      </td>
+    </tr>
+
+</table>
+
+</body>
+</html>

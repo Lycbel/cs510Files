@@ -11,6 +11,14 @@ else
  fi
 fi
 }
+function checkPackage(){
+RE=$(dpkg -l $1)
+if [ "$RE" ];then
+  echo "$1 already installed"
+else
+  sudo apt install $1;
+fi
+}
 #check make
 checkNativeCommandAv make
 #check for java
@@ -29,6 +37,6 @@ else
  curl https://runtimeverification.com/match/1.0/rv-match-linux-64-1.0-SNAPSHOT.jar >> temp.jar
  sudo java -jar temp.jar
 fi
-#check for libtool
-checkNativeCommandAv libtool libtool-bin
+#check pcap
+checkPackage libpcap0.8-dev
 

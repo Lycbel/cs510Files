@@ -47,8 +47,31 @@ make:
 	Built for x86_64-pc-linux-gnu
 	Copyright (C) 1988-2014 Free Software Foundation, Inc.
 
-to run the minimized input:
-wget //todo
-uzip 
-cd 
+the minimized input:
+```
+#include <stdlib.h>
+#include <stdio.h>
+typedef struct {
+    int scale;
+    char *base;
+    char *arr[];
+} units;
+units time_units_us = {
+    .scale = 1000,
+    .base  = "us",
+    .arr = { "ms", "s", NULL } // here will have the same problem
+};
+
+int main()
+{
+     printf("can work with gcc%d",time_units_us.scale);
+     return 0;
+}
+```
+to run it:
+```
+wget https://github.com/Lycbel/cs510Files/blob/master/report6/wrk/wrk.zip?raw=true -O wrk.zip
+unzip wrk.zip
+cd wrk
 bash run.sh
+```
