@@ -24,20 +24,10 @@ else
  curl https://runtimeverification.com/match/1.0/rv-match-linux-64-1.0-SNAPSHOT.jar >> temp.jar
  sudo java -jar temp.jar
 fi
-
-
-#use kcc to compile
-if [ ! -d "temp_wrk" ]; then
-mkdir temp_wrk
-fi
-cd temp_wrk 
-if [ ! -f "minilua.c" ];then
-wget https://raw.githubusercontent.com/Lycbel/cs510Files/master/report4/report_wrk/minimized_input/minilua.c
-fi
 #use gcc will not have any problem
 echo "-------kcc   -c -o minilua.o minilua.c--------"
-kcc   -c -o minilua.o minilua.c
+kcc  -c -o minilua.o minilua.c
 echo "-------kcc   -o minilua minilua.o -lm-------"
-kcc   -o minilua minilua.o -lm
-echo "-------run ./minilua-------"
+kcc  -o minilua minilua.o -lm 
+echo "-------run ./minilua dynasm.lua-------"
 ./minilua

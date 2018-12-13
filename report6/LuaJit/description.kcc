@@ -1,21 +1,61 @@
 ```
-use Ubuntu 16.04.5
+system info
+Ubuntu 16.04.5 with 5GB memory
 kcc: version 1.0 GNU-compatible Build number: 77a4079-1542856183611
 ```
-<First> if use kcc to compile minilua (one executable file LuaJIT need), it will run out of memory:
+First if use kcc to compile minilua (one executable file LuaJIT need), it will run out of memory:
 to reproduce the problem:
 
 ```
-todo
+wget https://github.com/Lycbel/cs510Files/blob/master/report6/LuaJit/luajit_minilua_part/luajit_minilua_part.zip?raw=true -O luajit_minilua_part.zip
+unzip luajit_minilua_part.zip
+cd luajit_minilua_part
+bash run.sh
+```
+error:
+```
+.....................
+....................................
+Type of lvalue (unsigned long) not compatible with the effective type of the object being accessed (struct lua_State):
+      > in luaM_realloc_ at host/minilua.c:557:1
+        in luaD_protectedparser at host/minilua.c:1256:5
+        in lua_load at host/minilua.c:5794:1
+        in luaL_loadfile at host/minilua.c:6170:1
+        in main at host/minilua.c:7759:1
+
+    Undefined behavior (UB-EIO10):
+        see C11 section 6.5:7 http://rvdoc.org/C11/6.5
+        see C11 section J.2:1 item 37 http://rvdoc.org/C11/J.2
+        see CERT-C section EXP39-C http://rvdoc.org/CERT-C/EXP39-C
+        see MISRA-C section 8.1:3 http://rvdoc.org/MISRA-C/8.1
+
+Type of lvalue (union GCObject *) not compatible with the effective type of the object being accessed (struct lua_TValue):
+      > in lua_tolstring at host/minilua.c:5491:1
+        in main at host/minilua.c:7765:1
+
+    Undefined behavior (UB-EIO10):
+        see C11 section 6.5:7 http://rvdoc.org/C11/6.5
+        see C11 section J.2:1 item 37 http://rvdoc.org/C11/J.2
+        see CERT-C section EXP39-C http://rvdoc.org/CERT-C/EXP39-C
+        see MISRA-C section 8.1:3 http://rvdoc.org/MISRA-C/8.1
+
+Type of lvalue (union GCObject) not compatible with the effective type of the object being accessed (union TString):
+      > in lua_tolstring at host/minilua.c:5491:1
+        in main at host/minilua.c:7765:1
+
+    Undefined behavior (UB-EIO10):
+        see C11 section 6.5:7 http://rvdoc.org/C11/6.5
+        see C11 section J.2:1 item 37 http://rvdoc.org/C11/J.2
+        see CERT-C section EXP39-C http://rvdoc.org/CERT-C/EXP39-C
+        see MISRA-C section 8.1:3 http://rvdoc.org/MISRA-C/8.1
+Error: not enough memory
 ```
 
-
-
-can work around minilua by set HOST_LUA=lua in src/Makefile, then first problem will be solved.
-<Second> problem:
+But can work around minilua by installing lua to system like lua5.1, then first problem will be solved. but will have
+**Second** problem:
 A.
 1)in lj_def.h file it need to have the predifined macro ``__GNUC__``, but kcc doesn't have it
-2)if define the __GNUC__ by ``-D__GNUC__=5``, in the code it keeps undefined, however if we use this to define HELLO or APPLE etc. They can be defined.
+2)if define the`` __GNUC__ ``by ``-D__GNUC__=5``, in the code it keeps undefined, however if we use this to define ``__HELLO__`` or ``__APPLE__`` etc. They can be defined.
 3)to define it, we can only define it in the file by ``#define __GNUC__ 5``
 example of it:
 for file main.c
@@ -30,42 +70,16 @@ compile by:
 both will fail, but gcc will success.
 
 B.
-4)to compile the project I replaced all the __GNUC__ to __HELLO__=5,then define problem will be solved, (maybe it is not a valid approach)
+4)to compile the project I replaced all the ``__GNUC__`` to`` __HELLO__=5``,then 'define problem will be solved.
 in addition, I use GCC to compile the host (kcc will not finish compilation)
-then by adding the cflags= "-D__HELLO__=5 -std=gnu11" it can finish compilation with printing lots of errors.
+then by adding the cflags= "-D__HELLO__=5 -std=gnu11" it can finish compilation with printing lots of [errors](https://github.com/Lycbel/cs510Files/blob/master/report6/LuaJit/total_luajit/output.txt).
 
-#5)but when test, it will show the error "Execution failed (configuration dumped)"
+5)but when run the executable file ./src/luajit, it will show the error "Execution failed (configuration dumped)"
 to reproduce the problem:
 
 ```
-todo 
-```
-
-
-
-the output when compile the whole LuaJIT:
-```
-make CC=kcc CFLAGS=-std=gnu11 -D__HELLO__=5 > output.txt 2>&1
-./src/luajit
-Conversion from an integer to non-null pointer:
-      > in lj_state_newstate at lj_state.c:202:6
-        in luaL_newstate at lib_aux.c:338:3
-        in main at luajit.c:561:3
-
-    Implementation defined behavior (IMPL-CCV13):
-        see C11 section 6.3.2.3:5 http://rvdoc.org/C11/6.3.2.3
-        see CERT section INT36-C http://rvdoc.org/CERT/INT36-C
-
-Dereferencing a null pointer:
-      > in lj_state_newstate at lj_state.c:202:6
-        in luaL_newstate at lib_aux.c:338:3
-        in main at luajit.c:561:3
-
-    Undefined behavior (UB-CER3):
-        see C11 section 6.5.3.2:4 http://rvdoc.org/C11/6.5.3.2
-        see C11 section J.2:1 item 43 http://rvdoc.org/C11/J.2
-        see CERT-C section EXP34-C http://rvdoc.org/CERT-C/EXP34-C
-        see MISRA-C section 8.1:3 http://rvdoc.org/MISRA-C/8.1
-
-Execution failed (configuration dumped)
+wget  https://github.com/Lycbel/cs510Files/blob/master/report6/LuaJit/total_luajit/total_luajit.zip?raw=true -O total_luajit.zp
+unzip total_luajit.zp
+cd total_luajit
+bash run.sh
 ```

@@ -1556,7 +1556,6 @@ static Table*luaH_new(lua_State*L,int narray,int nhash){
 Table*t=luaM_new(L,Table);
 luaC_link(L,obj2gco(t),5);
 t->metatable=NULL;
-t->flags=cast_byte(~0);
 t->array=NULL;
 t->sizearray=0;
 t->lsizenode=0;
