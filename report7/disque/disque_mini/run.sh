@@ -1,8 +1,9 @@
 : ' 
 this is another project having problem because of aotmic
-there is flags about atomic for gcc but kcc doesnt have
+there is a flag about atomic for gcc but kcc doesnt have
 the project is disque commit 0192ba7e1cda157024229962b7bee1c6e86d771b
-the code main.c shows if there is flag __ATOMIC_RELAXED the preprocessed code will be (gcc case)
+the code main.c is the minimied input for it, it will based on the flag to determine the function definition
+it shows if there is flag __ATOMIC_RELAXED the preprocessed code will be (gcc case)
 ```
 do { size_t _n = (size+(sizeof(size_t))); if (_n&(sizeof(long)-1)) _n += sizeof(long)-(_n&(sizeof(long)-1)); if (zmalloc_thread_safe) { __atomic_add_fetch(&used_memory,(size+(sizeof(size_t))),0); } else { used_memory += _n; } } while(0);
 ```
